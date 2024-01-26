@@ -8,7 +8,6 @@ const startServer = async () => {
   //App.listen(3000) we're not using express
 }
 
-
 export default async function handler(req, res) {
   const options = {
     method: `${req.method}`,

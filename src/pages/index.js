@@ -1,4 +1,7 @@
+// dependencies import
 import { useState, useEffect } from 'react';
+import Head from 'next/head'
+import dynamic from 'next/dynamic';
 
 export default function Home() {
   const [data, setData] = useState(null)
@@ -20,9 +23,6 @@ export default function Home() {
   // instead of "class", write "className" instead like shown in <button>. it should autofill it automatically
   return (
     <main>
-      <nav>
-        here's where the navbar can go. were u kate and felix gonna talk ab the thing. prolly outside, not outside outside no shit ill come with thumbs up
-      </nav>
       <div className="fact-generator">
         <div>
           { isLoading ? <h5>Loading...</h5> : <h5>{ data }</h5>}
@@ -31,7 +31,6 @@ export default function Home() {
           Generate another fact
         </button>
       </div>
-
     </main>
   );
 }
