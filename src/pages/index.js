@@ -1,6 +1,5 @@
 // dependencies import
 import { useState, useEffect } from 'react';
-import Head from 'next/head'
 import dynamic from 'next/dynamic';
 
 export default function Home() {
