@@ -1,11 +1,11 @@
 import { Client } from 'pg';
-const stores = require("../../../stores.json");
+const stores = require('@/pages/api/stores.json')
 
 class Model {
   constructor() {
     this.client = new Client({
-      user: 'postgress',
-      host: 'localhost',
+      user: 'postgres',
+      host: process.env.POSTGRES_HOST || 'localhost',
       database: 'postgres',
       password: '123',
       port: '5431'
@@ -17,7 +17,7 @@ class Model {
   }
 
   async setupDatabase() {
-    await this.connection.query(`
+    await this.client.query(`
     CREATE TABLE IF NOT EXISTS public.stores
     (
         id SERIAL,
@@ -28,7 +28,7 @@ class Model {
         CONSTRAINT stores_pkey PRIMARY KEY (id)
     )`);
 
-    await this.connection.query(`
+    await this.client.query(`
       ALTER TABLE IF EXISTS public.stores
           OWNER to postgres
     `);

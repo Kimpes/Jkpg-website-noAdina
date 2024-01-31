@@ -12,7 +12,7 @@ export default function Layout({children}) {
       <Head>
         <title>
           hello im title
-        </title>
+        </title>    
       </Head>
 
       {/* this is the main layout */}

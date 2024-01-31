@@ -6,6 +6,8 @@ let Model = null;
 const startServer = async () => {
   Model = new ModelClass();
   await Model.init();
+  await Model.setupDatabase();
+  console.log("buh")
   //App.listen(3000) we're not using express
 };
 

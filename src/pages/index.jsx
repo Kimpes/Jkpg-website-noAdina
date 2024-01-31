@@ -4,17 +4,15 @@ import dynamic from 'next/dynamic';
 
 export default function Home() {
   const [data, setData] = useState(null)
-  const [isLoading, setLoading] = useState(true)
   const [factGenerator, setFact] = useState(0)
 
   useEffect(() => {
-    setLoading(false);
-
-    fetch('/api/hello')
+    setData("Loading...")
+    
+    fetch('/api/catfact')
       .then((res) => res.json())
       .then((data) => {
         setData(data.fact);
-        setLoading(false);
       })
   }, [factGenerator])
 
@@ -24,7 +22,7 @@ export default function Home() {
     <main>
       <div className="fact-generator">
         <div>
-          { isLoading ? <h5>Loading...</h5> : <h5>{ data }</h5>}
+          <h5>{ data }</h5>
         </div>
         <button className='px-4 py-1 border border-white' onClick={() => setFact(factGenerator + 1)}>
           Generate another fact
