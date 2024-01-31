@@ -27,7 +27,7 @@ export default function Home() {
           { isLoading ? <h5>Loading...</h5> : <h5>{ data }</h5>}
         </div>
         <button className='px-4 py-1 border border-white' onClick={() => setFact(factGenerator + 1)}>
-          Generate another fact
+          Generate another fact, test
         </button>
       </div>
     </main>
