@@ -2,32 +2,38 @@
   {
     "name": "Åhlens",
     "url": "ahlens.se/varuhus/jonkoping?utm_source=google&utm_medium=organic&utm_campaign=business_profile&utm_content=website_link",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Shoppa"
   },
   {
     "name": "Akademibokhandeln",
     "url": "akademibokhandeln.se/butik/jonkoping-c",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Shoppa"
   },
   {
     "name": "Apoteket AB",
     "url": "apoteket.se/apotek/apoteket-ostra-storgatan-jonkoping/",
-    "district": null
+    "district": null,
+    "type": "Shoppa"
   },
   {
     "name": "Apotek Hjärtat",
     "url": "apotekhjartat.se/hitta-apotek-hjartat/jonkoping/apotek_hjartat_smedjegatan_2_jonkoping/",
-    "district": null
+    "district": null,
+    "type": "Shoppa"
   },
   {
     "name": "Ashur Brud & Fest - Skrädderi",
     "url": "facebook.com/AshuraitaBrudFest/",
-    "district": null
+    "district": null,
+    "type": "Shoppa"
   },
   {
     "name": "Asia livs, servicebutik",
     "url": "facebook.com/profile.php?id=100051215441977",
-    "district": null
+    "district": null,
+    "type": "Shoppa"
   },
   {
     "name": "Ateljé Creativ i Jönköping/Finrummet",
@@ -37,7 +43,8 @@
   {
     "name": "Ateljé KEG",
     "url": "ateljekeg.se",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Shoppa"
   },
   {
     "name": "Atlantis Dive College",

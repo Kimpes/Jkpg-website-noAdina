@@ -1,19 +1,21 @@
 
 
 # ose official node runtime as parent image
-FROM node:20
+FROM node:20-alpine
 
 # set the working directory in the container
 WORKDIR /usr/src/app
 
-# copy the current directory conents into the container at the aformentioned directory
+# copy the current directory conents into the container at the aformentioned directory "this is when it installs your code into the docker"
 COPY . . 
 
 # install the packages in package.json
 RUN npm install
 
+RUN npx next build
+
 # make port at 3000 open to the outside world
 EXPOSE 3000
 
 # run the launch code when the container launches
-CMD ["node", "app.js"]
+CMD ["npm", "start"]
