@@ -1,15 +1,15 @@
-import { Client } from 'pg';
-const stores = require('@/pages/api/stores.json')
+import { Client } from "pg";
+const stores = require("@/pages/api/stores.json");
 
 class Model {
   constructor() {
     this.client = new Client({
-      user: 'postgres',
-      host: process.env.POSTGRES_HOST || 'localhost',
-      database: 'postgres',
-      password: '123',
-      port: '5431'
-    })
+      user: "postgres",
+      host: process.env.POSTGRES_HOST || "localhost",
+      database: "postgres",
+      password: "123",
+      port: "5431",
+    });
   }
 
   async init() {
@@ -33,23 +33,33 @@ class Model {
           OWNER to postgres
     `);
 
-
     for (const store of stores) {
-      const { rows } = await this.connection.query(`
+      const { rows } = await this.connection.query(
+        `
         SELECT * FROM stores WHERE name = $1
-      `, [store.name]);
+      `,
+        [store.name]
+      );
 
       if (rows.length === 0) {
         if (!store.type) {
           store.type = null;
         }
         console.log(`Inserting ${store.name}`);
-        await this.connection.query(`
+        await this.connection.query(
+          `
           INSERT INTO stores (name, url, district, type)
           VALUES ($1, $2, $3, $4)
-        `, [store.name, store.url, store.district, store.type]);
+        `,
+          [store.name, store.url, store.district, store.type]
+        );
       }
     }
+  }
+
+  async fetchAllStores() {
+    const res = await this.client.query("SELECT * FROM public.stores");
+    return res.rows;
   }
 }
 
