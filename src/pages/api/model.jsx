@@ -7,7 +7,7 @@ class Model {
       user: 'postgres',
       host: process.env.POSTGRES_HOST || 'localhost',
       database: 'postgres',
-      password: '123',
+      password: '1234',
       port: '5431'
     })
   }
@@ -35,7 +35,7 @@ class Model {
 
 
     for (const store of stores) {
-      const { rows } = await this.connection.query(`
+      const { rows } = await this.client.query(`
         SELECT * FROM stores WHERE name = $1
       `, [store.name]);
 
@@ -44,12 +44,21 @@ class Model {
           store.type = null;
         }
         console.log(`Inserting ${store.name}`);
-        await this.connection.query(`
+        await this.client.query(`
           INSERT INTO stores (name, url, district, type)
           VALUES ($1, $2, $3, $4)
         `, [store.name, store.url, store.district, store.type]);
       }
     }
+  }
+
+  async getStoreById(query) {
+    const { rows } = await this.client.query(`
+      SELECT * FROM stores 
+      WHERE id=$1
+      `, [query]);
+    
+    return rows[0];
   }
 }
 
