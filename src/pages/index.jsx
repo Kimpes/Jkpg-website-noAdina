@@ -3,18 +3,16 @@ import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 
 export default function Home() {
-  const [data, setData] = useState(null)
-  const [factGenerator, setFact] = useState(0)
+  const [store, setStore] = useState(null)
 
   useEffect(() => {
-    setData("Loading...")
-    
-    fetch('/api/catfact')
+    fetch('/api/storeController')
       .then((res) => res.json())
-      .then((data) => {
-        setData(data.fact);
-      })
-  }, [factGenerator])
+      .then((data) => setStore([data.id, data.name, data.district, data.type]));
+
+    // console.log(store.name)
+    
+  }, [])
 
   // write html down here, <main> has to wrap around everything
   // instead of "class", write "className" instead like shown in <button>. it should autofill it automatically
@@ -22,11 +20,8 @@ export default function Home() {
     <main>
       <div className="fact-generator">
         <div>
-          <h5>{ data }</h5>
+          <h5>{ store }</h5>
         </div>
-        <button className='px-4 py-1 border border-white' onClick={() => setFact(factGenerator + 1)}>
-          Generate another fact
-        </button>
       </div>
     </main>
   );
