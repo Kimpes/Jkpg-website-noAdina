@@ -86,7 +86,7 @@ class Model {
 
   async addStore(store) {
     const { rows } = await this.client.query(`
-      INSERT INTO portfolio_entries (title, description, post_date, tag_1, tag_2, image_name) 
+      INSERT INTO public.stores (name, url, district, type) 
       VALUES ($1, $2, $3, $4)
       `, [store.name, store.url, store.district, store.type])
     return rows[0];
