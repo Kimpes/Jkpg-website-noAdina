@@ -29,7 +29,11 @@ export default async function handler(req, res) {
 
     case "POST":
       try {
-        res.status(200).json(req.body);
+        const id = req.body.id;
+        const response = await Model.getStoreById(id);
+        
+        console.log(req.body)
+        res.status(200).json(response);
       } catch (error) {
         res.status(400).send(error);
       }
