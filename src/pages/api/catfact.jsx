@@ -1,13 +1,13 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import axios from "axios";
-import ModelClass from "./model";
+import ModelClass from "./storeModel";
 let Model = null;
 
 const startServer = async () => {
   Model = new ModelClass();
   await Model.init();
   await Model.setupDatabase();
-  console.log("buh")
+  console.log("buh");
   //App.listen(3000) we're not using express
 };
 

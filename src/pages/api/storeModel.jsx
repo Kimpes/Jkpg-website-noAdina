@@ -1,15 +1,15 @@
-import { Client } from 'pg';
-const stores = require('@/pages/api/stores.json')
+import { Client } from "pg";
+const stores = require("@/pages/api/stores.json");
 
 class Model {
   constructor() {
     this.client = new Client({
-      user: 'postgres',
-      host: process.env.POSTGRES_HOST || 'localhost',
-      database: 'postgres',
-      password: '1234',
-      port: '5431'
-    })
+      user: "postgres",
+      host: process.env.POSTGRES_HOST || "localhost",
+      database: "postgres",
+      password: "1234",
+      port: "5431",
+    });
   }
 
   async init() {
@@ -33,63 +33,80 @@ class Model {
           OWNER to postgres
     `);
 
-
     for (const store of stores) {
-      const { rows } = await this.client.query(`
+      const { rows } = await this.client.query(
+        `
         SELECT * FROM stores WHERE name = $1
-      `, [store.name]);
+      `,
+        [store.name]
+      );
 
       if (rows.length == 0) {
         if (!store.type) {
           store.type = null;
         }
         console.log(`Inserting ${store.name}`);
-        await this.client.query(`
+        await this.client.query(
+          `
           INSERT INTO public.stores (name, url, district, type)
           VALUES ($1, $2, $3, $4)
-        `, [store.name, store.url, store.district, store.type]);
+        `,
+          [store.name, store.url, store.district, store.type]
+        );
       }
     }
   }
 
   async getStoreById(id) {
-    const { rows } = await this.client.query(`
+    const { rows } = await this.client.query(
+      `
       SELECT * FROM public.stores 
       WHERE id=$1
-      `, [id]);
-    
+      `,
+      [id]
+    );
+
     return rows[0];
   }
 
   async getAllStores() {
     const { rows } = await this.client.query(`
       SELECT * FROM public.stores
-      `)
-    return rows
+      `);
+    return rows;
   }
 
   async editStore(store) {
-    const { rows } = await this.client.query(`
+    const { rows } = await this.client.query(
+      `
       UPDATE public.stores 
       SET name = $1, url = $2, district = $3, type = $4 
       WHERE id = $5
-      `, [store.name, store.url, store.district, store.type, store.id])
-    return rows[0];
+      `,
+      [store.name, store.url, store.district, store.type, store.id]
+    );
+    return;
   }
 
   async deleteStore(id) {
-    const { rows } = await this.client.query(`
+    const { rows } = await this.client.query(
+      `
       DELETE FROM public.stores WHERE id = $1
-      `, [id])
+      `,
+      [id]
+    );
     return;
   }
 
   async addStore(store) {
-    const { rows } = await this.client.query(`
+    const { rows } = await this.client.query(
+      `
       INSERT INTO public.stores (name, url, district, type) 
       VALUES ($1, $2, $3, $4)
-      `, [store.name, store.url, store.district, store.type])
-    return rows[0];
+      `,
+      [store.name, store.url, store.district, store.type]
+    );
+    return;
   }
 }
 

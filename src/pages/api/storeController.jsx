@@ -1,4 +1,4 @@
-import ModelClass from "./model";
+import ModelClass from "./storeModel";
 let Model = null;
 
 const startServer = async () => {
@@ -8,18 +8,10 @@ const startServer = async () => {
 };
 
 export default async function handler(req, res) {
-
   switch (req.method) {
     case "GET":
       try {
-        let store = {
-          id: 141,
-          name: "silly store",
-          url: "google.com",
-          district: "Väster",
-          type: "Shoppa"
-        };
-        const response = await Model.editStore(store);
+        const response = await Model.getStoreById(140);
         console.log(response);
         res.status(200).json(response);
       } catch (error) {
@@ -29,10 +21,17 @@ export default async function handler(req, res) {
 
     case "POST":
       try {
+        let store = {
+          id: 141,
+          name: "silly store",
+          url: "google.com",
+          district: "Väster",
+          type: "Shoppa",
+        };
         const id = req.body.id;
         const response = await Model.getStoreById(id);
-        
-        console.log(req.body)
+
+        console.log(req.body);
         res.status(200).json(response);
       } catch (error) {
         res.status(400).send(error);

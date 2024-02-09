@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Silly event",
+    "description": "come here and have a silly time with us",
+    "location": "Öster",
+    "type": "Celebration",
+    "date": null
+  },
+  {
+    "title": "Not Silly event",
+    "description": "come here and have an awful time with us",
+    "location": "Väster",
+    "type": "Mourning",
+    "date": null
+  }
+]
