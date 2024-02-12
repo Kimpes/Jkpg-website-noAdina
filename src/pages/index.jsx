@@ -6,9 +6,7 @@ export default function Home() {
   const [store, setStore] = useState(null)
 
   useEffect(() => {
-    fetch('/api/storeController')
-      .then((res) => res.json())
-      .then((data) => setStore([data.id, data.name, data.district, data.type]));
+    fetch('/api/events/controller')
 
     // console.log(store.name)
     
@@ -20,7 +18,6 @@ export default function Home() {
     <main>
       <div className="fact-generator">
         <div>
-          <h5>{ store }</h5>
         </div>
       </div>
     </main>

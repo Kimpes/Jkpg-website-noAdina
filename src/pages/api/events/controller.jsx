@@ -1,4 +1,4 @@
-import ModelClass from "./storeModel";
+import ModelClass from "../events/model";
 let Model = null;
 
 const startServer = async () => {
@@ -11,8 +11,6 @@ export default async function handler(req, res) {
   switch (req.method) {
     case "GET":
       try {
-        const response = await Model.getStoreById(140);
-        console.log(response);
         res.status(200).json(response);
       } catch (error) {
         res.status(400).send(error);
@@ -21,15 +19,8 @@ export default async function handler(req, res) {
 
     case "POST":
       try {
-        let store = {
-          id: 141,
-          name: "silly store",
-          url: "google.com",
-          district: "Väster",
-          type: "Shoppa",
-        };
-        const id = req.body.id;
-        const response = await Model.getStoreById(id);
+        const id = req.body.eid;
+        const response = await Model.getEventById(id);
 
         console.log(req.body);
         res.status(200).json(response);

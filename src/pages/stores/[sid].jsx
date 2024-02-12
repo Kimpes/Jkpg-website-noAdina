@@ -9,7 +9,7 @@ export default function Page() {
     async function fetchData() {
       if (!router.isReady) return;
 
-      await fetch("/api/storeController", {
+      await fetch("/api/stores/controller", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -33,9 +33,6 @@ export default function Page() {
         <li>{store[2]}</li>
         <li>{store[3]}</li>
       </ul>
-      <form action="/stores/141/delete" method="post">
-        <input type="submit" value="Delete" />
-      </form>
     </div>
   );
 }

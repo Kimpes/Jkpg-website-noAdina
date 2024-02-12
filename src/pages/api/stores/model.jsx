@@ -1,5 +1,5 @@
 import { Client } from "pg";
-const stores = require("@/pages/api/stores.json");
+const stores = require("@/pages/api/stores/stores.json");
 
 class Model {
   constructor() {
