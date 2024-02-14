@@ -1,4 +1,4 @@
-import ModelClass from "../events/model";
+import ModelClass from "./model";
 let Model = null;
 
 const startServer = async () => {
