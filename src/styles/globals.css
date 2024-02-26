@@ -54,3 +54,34 @@ h5 {
     text-wrap: balance;
   }
 }
+
+/*---------------------------- Main Layout ----------------------------*/
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr 100px; /*this determines the height of the navbar and footer*/
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.page-layout > * { /*these symbols mean "all elements that are inside an element with this class"*/
+  padding: 0 5vw;
+}
+
+main {
+  padding: 20px 0;
+  background-color: rgb(13, 11, 29); /*temporary background to see the size of the element*/
+}
+
+/*------------------------------ Navbar --------------------------------*/
+
+nav {
+  background-color: rgb(29, 11, 11); /*temporary background to see the size of the element*/
+}
+
+/*------------------------------ Footer --------------------------------*/
+
+footer {
+  background-color: rgb(8, 23, 14); /*temporary background to see the size of the element*/
+}

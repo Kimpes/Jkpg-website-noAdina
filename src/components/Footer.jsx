@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <div>
+    <footer>
       Footer
-    </div>
+    </footer>
   )
 }

@@ -18,6 +18,7 @@ export default function Home() {
     <main>
       <div className="fact-generator">
         <div>
+          <p>here's some text</p>
         </div>
       </div>
     </main>

@@ -27,9 +27,11 @@ export default function Layout({children}) {
       </Head>
 
       {/* this is the main layout */}
-      <Navbar />
-        <main>{children}</main>
-      <Footer />
+      <div className="page-layout">
+        <Navbar />
+          <main>{children}</main>
+        <Footer />
+      </div>
     </>
   )
 }

@@ -18,7 +18,7 @@ export default function Page() {
       })
         .then((res) => res.json())
         .then((data) =>
-          setEvent([data.id, data.title, data.description, data.locatiob, data.type, data.date])
+          setEvent([data.id, data.title, data.description, data.location, data.type, data.date])
         );
     }
 
