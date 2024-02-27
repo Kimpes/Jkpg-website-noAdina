@@ -27,13 +27,17 @@ export default function Page() {
 
   return (
     <div>
+      <h1>{ store[1] /*Store name*/ }</h1>
       <ul>
-        <li>{store[0]}</li>
-        <li>{store[1]}</li>
-        <li>{store[2]}</li>
-        <li>{store[3]}</li>
+        <li>ID: {store[0]}</li>
+        <li>District: {store[2]}</li>
+        <li>Type: {store[3]}</li>
       </ul>
-      <button className="primary-button">Edit store</button>
+      <div className="buttons-container">
+        <button className="primary-button">Edit store</button>
+        <button className="danger-button">Delete store</button>
+      </div>
+      
     </div>
   );
 }
