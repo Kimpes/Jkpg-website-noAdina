@@ -8,6 +8,8 @@ const startServer = async () => {
 };
 
 export default async function handler(req, res) {
+  let storeId;
+
   switch (req.method) {
     case "GET":
       try {
@@ -19,21 +21,29 @@ export default async function handler(req, res) {
 
     case "POST":
       try {
-        let store = {
-          id: 141,
-          name: "silly store",
-          url: "google.com",
-          district: "Väster",
-          type: "Shoppa",
-        };
-        const id = req.body.sid;
-        const response = await Model.getStoreById(id);
+        storeId = req.body.sid;
+        const response = await Model.getStoreById(storeId);
 
-        console.log(req.body);
+        // console.log(req.body);
         res.status(200).json(response);
       } catch (error) {
         res.status(400).send(error);
       }
+      break;
+
+    case "DELETE": 
+      try {
+        const response = await Model.deleteStore(storeId)
+
+        res.status(200).json(response);
+      } catch (error) {
+        res.status(error).send(error)
+      }
+      break;
+
+    case "PATCH":
+      
+      break;
 
     default:
       break;

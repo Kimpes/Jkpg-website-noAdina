@@ -1,11 +1,13 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-export default function Page() {
+export default function Page({params}) {
+  const queryParams = params;
   const router = useRouter();
   const [store, setStore] = useState([]); //could we make it an object instead of an array?
 
   useEffect(() => {
+    // console.log(queryParams)
     async function fetchData() {
       if (!router.isReady) return;
 
@@ -25,6 +27,12 @@ export default function Page() {
     fetchData();
   }, [router.isReady]);
 
+  async function deleteStore() {
+    await fetch("/api/stores/controller", {
+      method: "DELETE"
+    })
+  }
+
   return (
     <div>
       <h1>{ store[1] /*Store name*/ }</h1>
@@ -35,7 +43,7 @@ export default function Page() {
       </ul>
       <div className="buttons-container">
         <button className="primary-button">Edit store</button>
-        <button className="danger-button">Delete store</button>
+        <button className="danger-button" onClick={deleteStore}>Delete store</button>
       </div>
       
     </div>
