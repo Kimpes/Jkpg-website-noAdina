@@ -16,11 +16,10 @@ export default function Home() {
   // instead of "class", write "className" instead like shown in <button>. it should autofill it automatically
   return (
     <main>
-      <div className="fact-generator">
-        <div>
-          <p>here's some text</p>
-        </div>
+      <div>
+        <p>here's some text</p>
       </div>
+      <a href="/long-page">Go to the long page</a>
     </main>
   );
 }
