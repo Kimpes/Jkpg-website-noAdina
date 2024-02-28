@@ -7,6 +7,8 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --danger-color: 255, 30, 30;
+  --light-font: 255, 255, 255;
+  --dark-font: 0, 0, 0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,14 +19,11 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+p, a, h1, h2, h3, h4, button, li {
+  color: rgb(var(--dark-font));
+}
+nav p, nav a, nav h1, nav h2, nav h3, nav h4, nav button, nav li {
+  color: rgb(var(--light-font));
 }
 
 h1 {
@@ -50,6 +49,11 @@ h5 {
   font-size: 1.5rem;
 }
 
+a {
+  text-decoration: underline;
+  text-decoration-color: rgb(var(--light-font));
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -72,7 +76,7 @@ h5 {
 
 main {
   padding: 20px 0;
-  background-color: rgb(11, 11, 29); /*temporary background to see the size of the element*/
+  background-color: rgb(245, 237, 237);
 }
 
 main > div > * {
@@ -82,13 +86,36 @@ main > div > * {
 /*------------------------------ Navbar --------------------------------*/
 
 nav {
-  background-color: rgb(29, 11, 11); /*temporary background to see the size of the element*/
+  background-color: rgb(11, 11, 11);
+}
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar-content > ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  height: inherit;
+}
+.navbar-content > ul a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16pt;
+}
+.navbar-content > ul a:hover {
+  text-decoration: underline;
+}
+.navbar-logo {
+  max-height: 100px;
 }
 
 /*------------------------------ Footer --------------------------------*/
 
 footer {
-  background-color: rgb(11, 29, 11); /*temporary background to see the size of the element*/
+  background-color: rgb(147, 169, 182);
 }
 
 /*------------------------ Recurring elements ----------------------------*/
