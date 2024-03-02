@@ -17,16 +17,35 @@ export default async function handler(req, res) {
       }
       break;
 
-    case "POST":
+    case "PUT":
       try {
         const id = req.body.eid;
         const response = await Model.getEventById(id);
 
-        console.log(req.body);
         res.status(200).json(response);
       } catch (error) {
         res.status(400).send(error);
       }
+      break;
+
+    case "DELETE": 
+      try {
+        const id = JSON.parse(req.body).eid;
+        console.log(id)
+        const response = await Model.deleteEvent(id)
+
+        res.status(200).json(response);
+      } catch (error) {
+        res.status(error).send(error)
+      }
+      break;
+
+    case "PATCH":
+      let alteredEvent = req.body
+
+      const response = await Model.editEvent(alteredEvent)
+      res.status(200).json(response)
+      break;
 
     default:
       break;

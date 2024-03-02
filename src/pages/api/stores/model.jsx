@@ -28,10 +28,10 @@ class Model {
         CONSTRAINT stores_pkey PRIMARY KEY (id)
     )`);
 
-    await this.client.query(`
-      ALTER TABLE IF EXISTS public.stores
-          OWNER to postgres
-    `);
+    // await this.client.query(`
+    //   ALTER TABLE IF EXISTS public.stores
+    //       OWNER to postgres
+    // `);
 
     for (const store of stores) {
       const { rows } = await this.client.query(
@@ -89,13 +89,12 @@ class Model {
   }
 
   async deleteStore(id) {
-    const { rows } = await this.client.query(
+    await this.client.query(
       `
       DELETE FROM public.stores WHERE id = $1
       `,
       [id]
     );
-    return;
   }
 
   async addStore(store) {

@@ -29,10 +29,10 @@ class Model {
         CONSTRAINT events_pkey PRIMARY KEY (id)
     )`);
 
-    await this.client.query(`
-      ALTER TABLE IF EXISTS public.events
-          OWNER to postgres
-    `);
+    // await this.client.query(`
+    //   ALTER TABLE IF EXISTS public.events
+    //       OWNER to postgres
+    // `);
 
     for (const event of events) {
       const { rows } = await this.client.query(
@@ -77,11 +77,10 @@ class Model {
     return rows;
   }
 
-  async editEvent(eventObject) {
-    const event = eventObject;
+  async editEvent(event) {
     const { rows } = await this.client.query(
       `
-      UPDATE public.event 
+      UPDATE public.events
       SET title = $1, description = $2, location = $3, type = $4, date = $5
       WHERE id = $6
       `,

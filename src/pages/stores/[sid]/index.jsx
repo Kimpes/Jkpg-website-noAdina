@@ -1,8 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-export default function Page({params}) {
-  const queryParams = params;
+export default function Page() {
   const router = useRouter();
   const [store, setStore] = useState([]); //could we make it an object instead of an array?
 
@@ -12,7 +11,7 @@ export default function Page({params}) {
       if (!router.isReady) return;
 
       await fetch("/api/stores/controller", {
-        method: "POST", //i mean, it's not a post request really, so we should change this
+        method: "PUT", //i mean, it's not a post request really, so we should change this
         headers: {
           "Content-Type": "application/json",
         },
@@ -29,8 +28,11 @@ export default function Page({params}) {
 
   async function deleteStore() {
     await fetch("/api/stores/controller", {
-      method: "DELETE"
+      method: "DELETE",
+      body: JSON.stringify(router.query)
     })
+
+    router.push('/stores')
   }
 
   return (
@@ -42,8 +44,8 @@ export default function Page({params}) {
         <li>Type: {store[3]}</li>
       </ul>
       <div className="buttons-container">
-        <button className="primary-button">Edit store</button>
-        <button className="danger-button" onClick={deleteStore}>Delete store</button>
+        <button className="primary-button" onClick={() => router.push(`/stores/${ store[0] }/edit`)}>Edit store</button>
+        <button className="danger-button" onClick={() => deleteStore()}>Delete store</button>
       </div>
       
     </div>

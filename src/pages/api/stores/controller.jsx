@@ -8,8 +8,6 @@ const startServer = async () => {
 };
 
 export default async function handler(req, res) {
-  let storeId;
-
   switch (req.method) {
     case "GET":
       try {
@@ -19,9 +17,9 @@ export default async function handler(req, res) {
       }
       break;
 
-    case "POST":
+    case "PUT":
       try {
-        storeId = req.body.sid;
+        const storeId = req.body.sid;
         const response = await Model.getStoreById(storeId);
 
         // console.log(req.body);
@@ -33,6 +31,8 @@ export default async function handler(req, res) {
 
     case "DELETE": 
       try {
+        const storeId = JSON.parse(req.body).sid;
+        console.log(storeId)
         const response = await Model.deleteStore(storeId)
 
         res.status(200).json(response);
@@ -42,7 +42,10 @@ export default async function handler(req, res) {
       break;
 
     case "PATCH":
-      
+      let alteredStore = req.body
+
+      const response = await Model.editStore(alteredStore)
+      res.status(200).json(response)
       break;
 
     default:
