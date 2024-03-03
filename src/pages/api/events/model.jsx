@@ -73,6 +73,7 @@ class Model {
   async getAllEvents() {
     const { rows } = await this.client.query(`
       SELECT * FROM public.events
+      ORDER BY date ASC 
       `);
     return rows;
   }

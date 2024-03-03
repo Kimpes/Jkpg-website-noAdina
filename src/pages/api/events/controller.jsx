@@ -11,6 +11,7 @@ export default async function handler(req, res) {
   switch (req.method) {
     case "GET":
       try {
+        const response = await Model.getAllEvents();
         res.status(200).json(response);
       } catch (error) {
         res.status(400).send(error);

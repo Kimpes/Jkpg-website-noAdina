@@ -50,7 +50,7 @@ h5 {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   text-decoration-color: rgb(var(--light-font));
 }
 
@@ -67,7 +67,7 @@ a {
   grid-template-columns: 1fr; /*single collumn, 100% width*/
   grid-template-rows: 100px 1fr 100px; /*this determines the height of the navbar and footer*/
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .page-layout > * { /*these symbols mean "all elements that are inside an element with the page-layout class"*/

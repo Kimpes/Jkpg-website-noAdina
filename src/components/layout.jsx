@@ -8,14 +8,14 @@ const Footer = dynamic(() => import('@/components/Footer'));
 
 export default function Layout({children}) {
   useEffect(() => {
-    const startSerer = async () => {
+    const startServer = async () => {
       await fetch('/api/events/controller')
       .then((res) => res.json());
       await fetch('/api/stores/controller')
       .then((res) => res.json());
     }
 
-    startSerer()
+    startServer()
   })
   return (
     <>
