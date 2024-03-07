@@ -46,18 +46,18 @@ h1 {
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 48px;
   font-weight: bold;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 36px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 22px;
 }
 
 h5 {
@@ -198,4 +198,31 @@ button.danger-button,
 input[type="submit"].danger-button {
   border-color: rgb(var(--danger-color));
   color: rgb(var(--danger-color));
+}
+
+/*------------------------ Landing Page ----------------------------*/
+
+.page-selection {
+  margin-top: 20px;
+}
+
+.page-selection-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.page-selection-buttons li a {
+  height: 40px;
+  display: flex;
+}
+
+.page-selection-buttons li a h4 {
+  border: solid 1px;
+  border-color: var(--dark-font);
+  padding: 1px 18px;
+}
+
+.page-selection-buttons img {
+  width: 40px;
+  flex-shrink: 0;
 }
