@@ -19,7 +19,7 @@ export default function Page() {
       })
         .then((res) => res.json())
         .then((data) =>
-          setStore([data.id, data.name, data.district, data.type])
+          setStore([data.id, data.name, data.district, data.type, data.url])
         );
     }
 
@@ -29,25 +29,34 @@ export default function Page() {
   async function deleteStore() {
     await fetch("/api/stores/controller", {
       method: "DELETE",
-      body: JSON.stringify(router.query)
-    })
+      body: JSON.stringify(router.query),
+    });
 
-    router.push('/stores')
+    router.push("/stores");
   }
 
   return (
     <div>
-      <h1>{ store[1] /*Store name*/ }</h1>
+      <h1>{store[1] /*Store name*/}</h1>
       <ul>
         <li>ID: {store[0]}</li>
         <li>District: {store[2]}</li>
         <li>Type: {store[3]}</li>
+        <li>
+          <a href={store[4]}>Link</a>
+        </li>
       </ul>
       <div className="buttons-container">
-        <button className="primary-button" onClick={() => router.push(`/stores/${ store[0] }/edit`)}>Edit store</button>
-        <button className="danger-button" onClick={() => deleteStore()}>Delete store</button>
+        <button
+          className="primary-button"
+          onClick={() => router.push(`/stores/${store[0]}/edit`)}
+        >
+          Edit store
+        </button>
+        <button className="danger-button" onClick={() => deleteStore()}>
+          Delete store
+        </button>
       </div>
-      
     </div>
   );
 }
