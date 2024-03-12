@@ -30,23 +30,23 @@ export default async function handler(req, res) {
       }
       break;
 
-    case "DELETE": 
+    case "DELETE":
       try {
         const storeId = JSON.parse(req.body).sid;
-        console.log(storeId)
-        const response = await Model.deleteStore(storeId)
+        console.log(storeId);
+        const response = await Model.deleteStore(storeId);
 
         res.status(200).json(response);
       } catch (error) {
-        res.status(error).send(error)
+        res.status(error).send(error);
       }
       break;
 
     case "PATCH":
-      let alteredStore = req.body
+      let alteredStore = req.body;
 
-      const response = await Model.editStore(alteredStore)
-      res.status(200).json(response)
+      const response = await Model.editStore(alteredStore);
+      res.status(200).json(response);
       break;
 
     default:

@@ -193,7 +193,12 @@ input[type="submit"] {
 
 button.primary-button,
 input[type="submit"].primary-button {
-  border-color: white;
+  border-color: rgb(var(--dark-font));
+}
+
+button.primary-button.active {
+  background-color: rgb(var(--light-font));
+  color: rgb(var(--light-font));
 }
 
 button.danger-button,
@@ -280,3 +285,13 @@ input[type="submit"].danger-button {
   font-weight: 700;
 }
 
+/*-------------------------- Stores ------------------------------*/
+
+.store-filter {
+  padding: 20px;
+  background-color: antiquewhite;
+}
+
+.store-filter-location label {
+  padding-left: 5px;
+}
