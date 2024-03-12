@@ -303,28 +303,11 @@ input[type="submit"].danger-button {
   margin-bottom: 20px;
 }
 
-.searchbar li {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.searchbar h4 {
-  border: solid 2px;
-  border-color: var(--dark-font);
-  padding: 1px 65px;
-}
-
-
 .searchbar input {
   border: solid 2px;
   border-color: var(--dark-font);
-  padding: 1px 65px;
+  padding: 1px 5px;
 }
 
-.searchbar img {
-  width: 41px;
-  flex-shrink: 0;
-}
 
 

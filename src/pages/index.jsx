@@ -95,41 +95,39 @@ export default function Home() {
           </li>
           <li>
             <div className="searchbar">
-              <img src="/assets/search_icon.svg" alt="" />
-              <h4>SEARCH</h4>
-              </div>
-          </li>
+            <img src="/assets/search_icon.svg" alt="" />
+              <input
+                type="text"
+                id="search"
+                name="search"
+                placeholder="Search"
+                onChange={(e) => setSearch(e.target.value)}
+               
+              />
+              
+            </div>
+        </li>
         </ul>
-        <div className="searchbar">
-          <input
-            type="text"
-            id="search"
-            name="search"
-            placeholder="Search"
-            onChange={(e) => setSearch(e.target.value)}
-          />
-        </div>
-        <input type="submit" value="Filter" />
+          <input type="submit" value="Filter" />
       </div>
-  
-        <div className="grid grid-flow-row grid-cols-3 gap-x-10 gap-y-2 place-content-center">
-          {!!stores &&
-            stores
-              .filter((store) => {
-                return search.toLowerCase === ""
-                  ? store
-                  : store.name.toLowerCase().includes(search);
-              })
-              .map((store) => {
-                return (
-                  <StoreCard
-                    name={store.name}
-                    id={store.id}
-                    district={store.district}
-                  />
-                );
-              })}
-        </div>
+          <div className="grid grid-flow-row grid-cols-3 gap-x-3 gap-y-3 place-content-center">
+            {!!stores &&
+              stores
+                .filter((store) => {
+                  return search.toLowerCase === ""
+                    ? store
+                    : store.name.toLowerCase().includes(search);
+                })
+                .map((store) => {
+                  return (
+                    <StoreCard
+                      name={store.name}
+                      id={store.id}
+                      district={store.district}
+                    />
+                  );
+                })}
+          </div>
       </div>
   );
 }
