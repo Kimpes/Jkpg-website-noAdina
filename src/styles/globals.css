@@ -94,7 +94,7 @@ a {
 
 .page-layout > * > * {
   /*these symbols mean "all elements that are inside an element with the page-layout class"*/
-  max-width: 90rem;
+  max-width: 70rem;
   margin: 0 5vw;
 }
 
@@ -211,6 +211,7 @@ input[type="submit"].danger-button {
 .page-selection-buttons {
   display: flex;
   gap: 15px;
+  margin-bottom: 20px;
 }
 
 .page-selection-buttons li a {

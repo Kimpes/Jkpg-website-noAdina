@@ -19,7 +19,7 @@ export default function index() {
   }, [])
   return (
     <main>
-      <div className='grid grid-flow-row grid-cols-3 gap-x-16 gap-y-6 place-content-center'>
+      <div className='grid grid-flow-row grid-cols-3 gap-x-10 gap-y-2 place-content-center'>
         {
           !!stores && stores.map((store) => {
             return (
