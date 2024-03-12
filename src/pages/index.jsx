@@ -44,14 +44,19 @@ export default function Home() {
   // instead of "class", write "className" instead like shown in <button>. it should autofill it automatically
   return (
   
+<main>
 
+<div className="herosection">
+  <img src="/assets/map.jpg" alt="" />
+
+
+</div>
     <div className="main-content">
+      
       <div>
         <h1>Welcome to Jönköping City</h1>
       </div>
-      
-  
-
+     
       <a href="/long-page">Go to the long page</a>
       <div className="page-selection">
         <h2>Verksamheter på Tändsticksområdet</h2>
@@ -65,7 +70,7 @@ export default function Home() {
         <ul className="page-selection-buttons">
           <li>
             <a href="#">
-              <img src="/assets/square-placeholder.svg" alt="" />
+              <img src="/assets/shoppa.png" alt="" />
               <h4>SHOPPA</h4>
             </a>
           </li>
@@ -77,13 +82,13 @@ export default function Home() {
           </li>
           <li>
             <a href="#">
-              <img src="/assets/square-placeholder.svg" alt="" />
+              <img src="/assets/uupleva.png" alt="" />
               <h4>UPPLEV</h4>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="/assets/square-placeholder.svg" alt="" />
+              <img src="/assets/ata.png" alt="" />
               <h4>ÄTA</h4>
             </a>
           </li>
@@ -95,12 +100,12 @@ export default function Home() {
           </li>
           <li>
             <div className="searchbar">
-            <img src="/assets/search_icon.svg" alt="" />
+            <img src="/assets/hitta.png" alt="" />
               <input
                 type="text"
                 id="search"
                 name="search"
-                placeholder="Search"
+                placeholder="SEARCH"
                 onChange={(e) => setSearch(e.target.value)}
                
               />
@@ -129,5 +134,6 @@ export default function Home() {
                 })}
           </div>
       </div>
+      </main>
   );
 }
