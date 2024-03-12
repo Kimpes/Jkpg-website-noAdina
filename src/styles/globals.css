@@ -270,8 +270,8 @@ input[type="submit"].danger-button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
 }
 
 .event-card-container .event-date > p {
@@ -307,7 +307,12 @@ input[type="submit"].danger-button {
   border: solid 2px;
   border-color: var(--dark-font);
   padding: 1px 5px;
+  background-color: var(--background-start-rgb);
 }
 
 
+/*---------------------- Hero Section ------------------------------------------*/
 
+.herosection {
+  background-color: blue;
+}
