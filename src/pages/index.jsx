@@ -8,6 +8,7 @@ import EventCard from "@/components/EventCard";
 export default function Home() {
   const [stores, setStores] = useState([]);
   const [events, setEvents] = useState([]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     async function fetchAllStores() {
@@ -54,12 +55,12 @@ export default function Home() {
       <a href="/long-page">Go to the long page</a>
       <div className="page-selection">
         <h2>Verksamheter på Tändsticksområdet</h2>
-          <div className="grid grid-flow-row grid-cols-3 gap-x-16 gap-y-6 place-content-center event-card-container">
-          {!!events &&
-            events.map((event) => {
-              return <EventCard name={event.title} id={event.id} />;
-            })}
-          </div>
+           <div className="grid grid-flow-row grid-cols-3 gap-x-16 gap-y-6 place-content-center event-card-container">
+        {!!events &&
+          events.map((event) => {
+            return <EventCard name={event.title} id={event.id} />;
+          })}
+      </div>
         <h3>Vad vill du göra?</h3>
         <ul className="page-selection-buttons">
           <li>
@@ -92,21 +93,43 @@ export default function Home() {
               <h4>SOVA</h4>
             </a>
           </li>
+          <li>
+            <div className="searchbar">
+              <img src="/assets/search_icon.svg" alt="" />
+              <h4>SEARCH</h4>
+              </div>
+          </li>
         </ul>
-        <div className='grid grid-flow-row grid-cols-3 gap-x-5 gap-y-5 place-content-center'>
-        {
-          !!stores && stores.map((store) => {
-            return (
-              <StoreCard 
-                name={store.name}
-                id={store.id}
-              />
-            )
-          })
-        }
+        <div className="searchbar">
+          <input
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Search"
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </div>
+        <input type="submit" value="Filter" />
       </div>
+  
+        <div className="grid grid-flow-row grid-cols-3 gap-x-10 gap-y-2 place-content-center">
+          {!!stores &&
+            stores
+              .filter((store) => {
+                return search.toLowerCase === ""
+                  ? store
+                  : store.name.toLowerCase().includes(search);
+              })
+              .map((store) => {
+                return (
+                  <StoreCard
+                    name={store.name}
+                    id={store.id}
+                    district={store.district}
+                  />
+                );
+              })}
+        </div>
       </div>
-    
-    </div>
   );
 }

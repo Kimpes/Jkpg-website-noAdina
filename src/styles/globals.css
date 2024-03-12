@@ -225,9 +225,9 @@ input[type="submit"].danger-button {
 }
 
 .page-selection-buttons li a h4 {
-  border: solid 1px;
+  border: solid 2px;
   border-color: var(--dark-font);
-  padding: 1px 18px;
+  padding: 1px 20px;
 }
 
 .page-selection-buttons img {
@@ -295,3 +295,36 @@ input[type="submit"].danger-button {
 .store-filter-location label {
   padding-left: 5px;
 }
+
+/*----------------------- Search Bar --------------------------------------------*/
+
+.searchbar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.searchbar li {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.searchbar h4 {
+  border: solid 2px;
+  border-color: var(--dark-font);
+  padding: 1px 65px;
+}
+
+
+.searchbar input {
+  border: solid 2px;
+  border-color: var(--dark-font);
+  padding: 1px 65px;
+}
+
+.searchbar img {
+  width: 41px;
+  flex-shrink: 0;
+}
+
+
