@@ -9,6 +9,7 @@
   --danger-color: 255, 30, 30;
   --light-font: 255, 255, 255;
   --dark-font: 0, 0, 0;
+  --card-yellow: 247, 238, 109;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,6 +59,7 @@ h3 {
 
 h4 {
   font-size: 22px;
+  font-weight: 600;
 }
 
 h5 {
@@ -227,6 +229,53 @@ input[type="submit"].danger-button {
   flex-shrink: 0;
 }
 
-.hero-container{
-  
+/*-------------------------- Events ------------------------------*/
+
+.event-card-container > a {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  cursor: pointer;
 }
+
+.event-card-upper {
+  display: grid;
+  grid-template-columns: 250px 50px;
+  align-items: end;
+}
+
+.event-card-img-container {
+  max-height: 250px;
+}
+.event-card-upper img {
+  object-fit: fill;
+}
+
+.event-card-information {
+  padding: 10px 20px;
+  background-color: rgb(var(--card-yellow));
+}
+
+.event-card-container .event-date {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.event-card-container .event-date > p {
+  color: white;
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.event-card-container .event-date > h5 {
+  line-height: 0.9em;
+  font-weight: 700;
+}
+

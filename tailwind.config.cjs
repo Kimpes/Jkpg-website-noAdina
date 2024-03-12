@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     colors: {
       'blue': '#2F70ED',
-      'pink': '#F5C2BA'
+      'pink': '#F5C2BA',
+      'cardYellow':'"#F7EE6D'
       
     },
     extend: {

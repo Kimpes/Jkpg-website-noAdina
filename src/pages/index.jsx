@@ -43,31 +43,31 @@ export default function Home() {
           <li>
             <a href="#">
               <img src="/assets/square-placeholder.svg" alt="" />
-              <h4>Shoppa</h4>
+              <h4>SHOPPA</h4>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="/assets/square-placeholder.svg" alt="" />
-              <h4>Må Bra</h4>
+              <h4>MÅ BRA</h4>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="/assets/square-placeholder.svg" alt="" />
-              <h4>Upplev</h4>
-            </a>
-          </li>
-          <li>
-          <a href="#">
-              <img src="/assets/square-placeholder.svg" alt="" />
-              <h4>Ata</h4>
+              <h4>UPPLEV</h4>
             </a>
           </li>
           <li>
             <a href="#">
               <img src="/assets/square-placeholder.svg" alt="" />
-              <h4>Sova</h4>
+              <h4>ÄTA</h4>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/assets/square-placeholder.svg" alt="" />
+              <h4>SOVA</h4>
             </a>
           </li>
         </ul>
