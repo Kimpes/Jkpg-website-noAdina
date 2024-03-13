@@ -21,6 +21,18 @@ export default function index(props) {
     "Tändsticksområdet",
   ];
 
+  useEffect(() => {
+    async function fetchAllStores() {
+      await fetch("/api/stores/controller")
+        .then((res) => res.json())
+        .then((data) => {
+          setStores(data);
+        });
+    }
+
+    fetchAllStores();
+  }, []);
+
   const handleFilterOnClick = (selectedLocation) => {
     if (selectedFilters.includes(selectedLocation)) {
       let filters = selectedFilters.filter((el) => el !== selectedLocation);
@@ -29,29 +41,6 @@ export default function index(props) {
       setSelectedFilters([selectedFilters, selectedLocation].flat(1));
     }
   };
-
-  // const filterSearch = ({ searchQuery }) => {
-  //   const { query } = router;
-  //   if (searchQuery) query.searchQuery = searchQuery;
-
-  //   router.push({
-  //     pathname: router.pathname,
-  //     query: query,
-  //   });
-  // };
-
-  useEffect(() => {
-    async function fetchAllStores() {
-      await fetch("/api/stores/controller")
-        .then((res) => res.json())
-        .then((data) => {
-          setStores(data);
-          setFilteredStores(stores)
-        });
-    }
-
-    fetchAllStores();
-  }, []);
 
   useEffect(() => {
     filterItems();
@@ -103,30 +92,24 @@ export default function index(props) {
         {(!filteredStores || filteredStores.length === 0
           ? stores
           : filteredStores
-          )
-            .filter((store) => {
-              return search.toLowerCase === ""
-                ? store
-                : store.name.toLowerCase().includes(search);
-            })
-            .sort((a, b) => a.name.localeCompare(b.name))
-            .map((store) => {
-              return (
-                <StoreCard
-                  name={store.name}
-                  id={store.id}
-                  district={store.district}
-                  key={store.id}
-                />
-              );
-            })}
+        )
+          .filter((store) => {
+            return search.toLowerCase === ""
+              ? store
+              : store.name.toLowerCase().includes(search);
+          })
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((store) => {
+            return (
+              <StoreCard
+                name={store.name}
+                id={store.id}
+                district={store.district}
+                key={store.id}
+              />
+            );
+          })}
       </div>
     </main>
   );
 }
-
-// export async function getServerSideProps({ query }) {
-//   const searchQuery = query.query || "";
-
-//   const queryFilter = searchQuery;
-// }
