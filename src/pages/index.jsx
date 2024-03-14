@@ -86,7 +86,7 @@ export default function Home() {
   // write html down here, <main> has to wrap around everything
   // instead of "class", write "className" instead like shown in <button>. it should autofill it automatically
   return (
-    <main>
+    <div>
       <div className="herosection">
         <img src="/assets/map.jpg" alt="" />
       </div>
@@ -171,6 +171,6 @@ export default function Home() {
             })}
         </div>
       </div>
-    </main>
+    </div>
   );
 }

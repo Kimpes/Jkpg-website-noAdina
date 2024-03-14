@@ -10,6 +10,7 @@
   --light-font: 255, 255, 255;
   --dark-font: 0, 0, 0;
   --card-yellow: 247, 238, 109;
+  --brand-blue: 47, 112, 237;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,7 +43,7 @@ nav li {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   font-weight: bold;
 }
 
@@ -71,6 +72,10 @@ a {
   text-decoration-color: rgb(var(--light-font));
 }
 
+p {
+  max-width: 45rem;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -96,11 +101,13 @@ a {
   /*these symbols mean "all elements that are inside an element with the page-layout class"*/
   max-width: 70rem;
   margin: 0 5vw;
+  width: 100%;
 }
 
 main {
   padding: 20px 0;
   background-color: rgb(245, 237, 237);
+  /* z-index: -2; */
 }
 
 .main-content {
@@ -117,7 +124,8 @@ main {
 /*------------------------------ Navbar --------------------------------*/
 
 nav {
-  background-color: rgb(11, 11, 11);
+  background: rgb(var(--brand-blue));
+  z-index: 1;
 }
 .navbar-content {
   display: flex;
@@ -210,6 +218,16 @@ input[type="submit"].danger-button {
 
 .primary-button:hover {
   cursor: pointer;
+}
+
+.item-page-link {
+  display: flex;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.item-page-link img {
+  max-width: 50px;
 }
 
 /*------------------------ Landing Page ----------------------------*/
@@ -317,6 +335,59 @@ input[type="submit"].danger-button {
 
 /*---------------------- Hero Section ------------------------------------------*/
 
-.herosection {
-  background-color: blue;
+.herosection > * {
+  z-index: 1;
+  position: relative;
+}
+
+.herosection img {
+  position: relative;
+  filter: drop-shadow(0 1px 5px rgb(39, 53, 148));
+}
+
+.herosection::before {
+  background: rgb(var(--brand-blue));
+  bottom: 35rem;
+  content: "";
+  display: block;
+  left: calc(50% - 50vw);
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 0;
+}
+
+.herosection.item-page::before {
+  bottom: 50rem;
+}
+
+.herosection .page-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 30vh;
+  padding: 3vh 0;
+}
+
+.herosection .page-header span {
+  display: flex;
+  align-items: flex-start;
+}
+
+.herosection .page-header button {
+  margin: 40px 0 0 15px;
+  color: rgb(var(--light-font));
+  border-color: rgb(var(--light-font));
+  border-width: 2px;
+  font-weight: 700;
+}
+
+.herosection .page-header button:hover {
+  color: rgb(var(--brand-blue));
+  background-color: rgb(var(--light-font));
+}
+
+.herosection h1 {
+  color: rgb(var(--light-font));
 }

@@ -86,7 +86,6 @@ export default function index(props) {
             onChange={(e) => setSearch(e.target.value)}
           />
         </div>
-        <input type="submit" value="Filter" />
       </div>
       <div className="grid grid-flow-row grid-cols-3 gap-x-10 gap-y-2 place-content-center">
         {(!filteredStores || filteredStores.length === 0
