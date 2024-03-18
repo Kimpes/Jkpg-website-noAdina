@@ -99,6 +99,7 @@ export default function Home() {
               href="#store-grid"
             >
               <img src={`/assets/${location}.png`} alt="" />
+              <div>{location}</div>
             </a>
           ))}
         </div>

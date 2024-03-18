@@ -67,7 +67,7 @@ export default function Page() {
           </a>
         </li>
         <li>
-          <a href={`${store[4]}`}>
+          <a href={`https://${store[4]}`}>
             <img src="/assets/Link.png" alt="" />
             <h4>Website</h4>
           </a>

@@ -58,7 +58,6 @@
     "url": null,
     "district": null,
     "type": "Shoppa"
-    
   },
   {
     "name": "Balance Ljud och Bild",
@@ -80,7 +79,7 @@
   },
   {
     "name": "Blankdays",
-    "url": "https://blankdays.com/collections/all-products?gclid=CjwKCAjwov6hBhBsEiwAvrvN6EZZ1PsnlSJhnE7bmxINtl0Y0noU3rvCybdt217CGd3-bqMdx3mYRxoCK5EQAvD_BwE",
+    "url": "blankdays.com/collections/all-products?gclid=CjwKCAjwov6hBhBsEiwAvrvN6EZZ1PsnlSJhnE7bmxINtl0Y0noU3rvCybdt217CGd3-bqMdx3mYRxoCK5EQAvD_BwE",
     "district": "Tändsticksområdet",
     "type": "Shoppa"
   },
@@ -164,7 +163,7 @@
   },
   {
     "name": "Copenhagen Luxe",
-    "url": "https://copenhagenluxe.dk/",
+    "url": "copenhagenluxe.dk/",
     "district": "Öster",
     "type": "Shoppa"
   },
@@ -187,7 +186,7 @@
   },
   {
     "name": "Direkt optik",
-    "url": "https://www.direktoptik.se/butiker/jonkoping/ostra-storgatan-29/",
+    "url": "www.direktoptik.se/butiker/jonkoping/ostra-storgatan-29/",
     "district": "Öster",
     "type": "Shoppa"
   },
@@ -211,13 +210,13 @@
   },
   {
     "name": "Euroex",
-    "url": "https://maps.app.goo.gl/7gCF1SjfPPV2chTZ6",
+    "url": "maps.app.goo.gl/7gCF1SjfPPV2chTZ6",
     "district": "Resecentrum",
     "type": "Other"
   },
   {
     "name": "Evoke industry",
-    "url": "https://maps.app.goo.gl/SkxTcztDADfEBt3w9",
+    "url": "maps.app.goo.gl/SkxTcztDADfEBt3w9",
     "district": "Väster",
     "type": "Upplev"
   },
@@ -229,25 +228,25 @@
   },
   {
     "name": "Fiction Prescription",
-    "url": "https://www.instagram.com/fiction.prescription.jonkoping/",
+    "url": "www.instagram.com/fiction.prescription.jonkoping/",
     "district": "",
     "type": "Shoppa"
   },
   {
     "name": "Forex Bank Väster",
-    "url": "https://www.facebook.com/fiction.prescription",
+    "url": "www.facebook.com/fiction.prescription",
     "district": "Väster",
     "type": "Other"
   },
   {
     "name": "Foten",
-    "url": "https://www.foten.se/",
+    "url": "www.foten.se/",
     "district": "Öster",
     "type": "Shoppa"
   },
   {
     "name": "Friendly Corner",
-    "url": "https://friendlycorner.se/butiken",
+    "url": "friendlycorner.se/butiken",
     "district": "Tändsticksområdet",
     "type": "Shoppa"
   },
@@ -367,7 +366,7 @@
   },
   {
     "name": "Jönköpings antik och konsthandel",
-    "url": "https://maps.app.goo.gl/zusZ2xYPJMheBCXR7",
+    "url": "maps.app.goo.gl/zusZ2xYPJMheBCXR7",
     "district": "Väster",
     "type": "Shoppa"
   },
@@ -391,7 +390,7 @@
   },
   {
     "name": "Katrin Bååths Ateljé",
-    "url": "https://katrinbaath.se/ateljen/",
+    "url": "katrinbaath.se/ateljen/",
     "district": "Tändsticksområdet",
     "type": "Upplev"
   },
@@ -451,7 +450,7 @@
   },
   {
     "name": "Life Naturlig Hälsa",
-    "url": "https://www.lifebutiken.se/stores",
+    "url": "www.lifebutiken.se/stores",
     "district": "Väster",
     "type": "Shoppa"
   },
@@ -529,7 +528,7 @@
   },
   {
     "name": "Noa Noa",
-    "url": "httpsfacebook.com/Noa-Noa-J%C3%B6nk%C3%B6ping-446212958766553/",
+    "url": "facebook.com/Noa-Noa-J%C3%B6nk%C3%B6ping-446212958766553/",
     "district": "Öster",
     "type": "Shoppa"
   },
@@ -721,7 +720,7 @@
   },
   {
     "name": "Specsavers",
-    "url": "httpspecsavers.se/hitta-till-din-butik/jonkoping-city?utm_source=google&utm_medium=organic&utm_campaign=gmb-website&utm_content=jonkoping&y_source=1_NDA4Nzk2NjQtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    "url": "pecsavers.se/hitta-till-din-butik/jonkoping-city?utm_source=google&utm_medium=organic&utm_campaign=gmb-website&utm_content=jonkoping&y_source=1_NDA4Nzk2NjQtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
     "district": "Öster",
     "type": "Shoppa"
   },
@@ -751,7 +750,7 @@
   },
   {
     "name": "Synoptik",
-    "url": "httpsynoptik.se/butiker/jonkoping/jonkoping-ostra-storgatan5?utm_campaign=gmb-website&utm_source=google&utm_medium=organic&utm_content=667-Jonkoping-Ostra-Storgatan-5",
+    "url": "ynoptik.se/butiker/jonkoping/jonkoping-ostra-storgatan5?utm_campaign=gmb-website&utm_source=google&utm_medium=organic&utm_content=667-Jonkoping-Ostra-Storgatan-5",
     "district": "Öster",
     "type": "Shoppa"
   },

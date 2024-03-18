@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  transition: transform 0.2s;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -222,6 +226,7 @@ input[type="submit"].danger-button {
 
 .primary-button:hover {
   cursor: pointer;
+  transform: scale(1.05);
 }
 
 .item-page-link {
@@ -353,6 +358,15 @@ input[type="submit"].danger-button {
   cursor: pointer;
 }
 
+.clickable-map .map-button div {
+  display: none;
+}
+
+/* .clickable-map .map-button:hover div {
+  display: inline;
+  height: 0;
+} */
+
 .clickable-map .map-button.atollen {
   left: 700px;
   top: 350px;
@@ -452,4 +466,10 @@ input[type="submit"].danger-button {
   border-color: rgb(var(--dark-font));
   border-width: 6px;
   width: 40px;
+}
+
+/*------------------ Store Card -----------------------------------*/
+
+.card:hover {
+  transform: scale(1.05);
 }

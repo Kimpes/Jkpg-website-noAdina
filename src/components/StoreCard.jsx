@@ -8,7 +8,11 @@ export default function storeCard(props) {
   useEffect(() => {}, []);
 
   return (
-    <Link href={`/stores/${props.id}`} key={`store-${props.id}`}>
+    <Link
+      href={`/stores/${props.id}`}
+      key={`store-${props.id}`}
+      className="card"
+    >
       <div className="bg-pink w-full h-full py-3 px-6 grid grid-rows-2 cursor-pointer">
         <div className="m-0 flex items-center">
           <h5 className="font-bold">{props.name}</h5>

@@ -8,7 +8,7 @@ export default function storeCard(props) {
   useEffect(() => {}, []);
 
   return (
-    <Link href={`/events/${props.id}`}>
+    <Link href={`/events/${props.id}`} className="card">
       <div className="event-card-upper">
         <div className="event-card-img-container">
           <img src="/assets/dog.jpg" alt="a jack russtle terrier" />
