@@ -1,11 +1,15 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export default function NavBar() {
   return (
     <nav>
       <div className="navbar-content">
         <a href="/" className="navbar-logo-container">
-          <img src="/assets/temp-logo.png" alt="logo of JKPG City" className="navbar-logo"/>
+          <img
+            src="/assets/jkpgcity.png"
+            alt="logo of JKPG City"
+            className="navbar-logo"
+          />
         </a>
         <ul>
           <li className="navbar-link">
@@ -32,5 +36,5 @@ export default function NavBar() {
         </ul>
       </div>
     </nav>
-  )
+  );
 }
