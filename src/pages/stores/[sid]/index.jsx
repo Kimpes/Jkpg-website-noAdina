@@ -12,7 +12,7 @@ export default function Page() {
       if (!router.isReady) return;
 
       await fetch("/api/stores/controller", {
-        method: "PUT", //i mean, it's not a post request really, so we should change this
+        method: "PUT",
         headers: {
           "Content-Type": "application/json",
         },

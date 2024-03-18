@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -333,16 +337,70 @@ input[type="submit"].danger-button {
   background-color: var(--background-start-rgb);
 }
 
+/*------------------------ Hero Map ------------------------------------------*/
+
+.herosection .clickable-map {
+  background-image: url(/assets/map.jpg);
+  background-size: cover;
+  height: 620px;
+}
+
+.clickable-map .map-button {
+  width: 40px;
+  display: block;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.clickable-map .map-button:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.clickable-map .map-button.atollen {
+  left: 700px;
+  top: 350px;
+}
+
+.clickable-map .map-button.öster {
+  left: 921px;
+  top: 244px;
+}
+.clickable-map .map-button.väster {
+  left: 364px;
+  top: 232px;
+}
+.clickable-map .map-button.högskolan {
+  left: 431px;
+  top: 396px;
+}
+.clickable-map .map-button.resecentrum {
+  left: 527px;
+  top: -46px;
+}
+.clickable-map .map-button.rådhusparken {
+  left: 603px;
+  top: 13px;
+}
+.clickable-map .map-button.spira {
+  left: 787px;
+  top: 313px;
+}
+.clickable-map .map-button.tändsticksområdet {
+  left: 387px;
+  top: -156px;
+}
+
+.herosection .clickable-map {
+  position: relative;
+  filter: drop-shadow(0 1px 5px rgb(39, 53, 148));
+}
+
 /*---------------------- Hero Section ------------------------------------------*/
 
 .herosection > * {
   z-index: 1;
   position: relative;
-}
-
-.herosection img {
-  position: relative;
-  filter: drop-shadow(0 1px 5px rgb(39, 53, 148));
 }
 
 .herosection::before {
@@ -392,10 +450,9 @@ input[type="submit"].danger-button {
   color: rgb(var(--light-font));
 }
 
-
 /*------------------ Location Button -----------------------------------*/
 
-.location-button, 
+.location-button,
 input[type="submit"].location-button {
   border-color: rgb(var(--dark-font));
 }

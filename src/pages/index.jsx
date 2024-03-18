@@ -88,7 +88,20 @@ export default function Home() {
   return (
     <div>
       <div className="herosection">
-        <img src="/assets/map.jpg" alt="" />
+        <div className="clickable-map">
+          {locations.map((location, index) => (
+            <a
+              onClick={() => handleFilterOnClick(location)}
+              className={`map-button ${
+                selectedFilters.includes(location) ? "active" : ""
+              } ${location}`.toLowerCase()}
+              key={`map-filters-${index}`}
+              href="#store-grid"
+            >
+              <img src={`/assets/${location}.png`} alt="" />
+            </a>
+          ))}
+        </div>
       </div>
       <div className="main-content">
         <div>
@@ -115,7 +128,7 @@ export default function Home() {
                   }`}
                   key={`filters-${index}`}
                 >
-                  <img src={`/assets/${type}.png`} alt="" />
+                  <img src={`/assets/${type.toLowerCase()}.png`} alt="" />
                   <h4>{type.toUpperCase()}</h4>
                 </a>
               </li>
@@ -133,25 +146,24 @@ export default function Home() {
               </div>
             </li>
           </ul>
-          <div className="store-filter">
-          <ul className="page-selection-buttons">
-            <li>
-              <h5>Location</h5>
-              {locations.map((location, index) => (
-                <a
-                  onClick={() => handleFilterOnClick(location)}
-                  className={`location-button ${
-                    selectedFilters.includes(location) ? "active" : ""
-                  }`}
-                  key={`filters-${index}`}
-                >
-
-                  <img src={`/assets/${location}.png`} alt="" />
-                  <h4>{location.toUpperCase()}</h4>
-                </a>
-              ))}
-            </li>
-          </ul>
+          <div className="store-filter" id="store-grid">
+            <ul className="page-selection-buttons">
+              <li>
+                <h5>Location</h5>
+                {locations.map((location, index) => (
+                  <a
+                    onClick={() => handleFilterOnClick(location)}
+                    className={`location-button ${
+                      selectedFilters.includes(location) ? "active" : ""
+                    }`}
+                    key={`filters-${index}`}
+                  >
+                    <img src={`/assets/${location}.png`} alt="" />
+                    <h4>{location.toUpperCase()}</h4>
+                  </a>
+                ))}
+              </li>
+            </ul>
           </div>
         </div>
         <div className="grid grid-flow-row grid-cols-3 gap-x-3 gap-y-3 place-content-center">
