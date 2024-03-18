@@ -14,13 +14,13 @@
   {
     "name": "Apoteket AB",
     "url": "apoteket.se/apotek/apoteket-ostra-storgatan-jonkoping/",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
     "name": "Apotek Hjärtat",
     "url": "apotekhjartat.se/hitta-apotek-hjartat/jonkoping/apotek_hjartat_smedjegatan_2_jonkoping/",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
