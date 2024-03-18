@@ -19,6 +19,11 @@ export default function index() {
   }, []);
   return (
     <main>
+      <div className="herosection item-page my-16">
+        <div className="page-header">
+          <h1>WHAT DO YOU WANT TO DO TODAY?</h1>
+        </div>
+      </div>
       <div className="grid grid-flow-row grid-cols-3 gap-x-16 gap-y-6 place-content-center event-card-container">
         {!!events &&
           events.map((event) => {

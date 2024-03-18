@@ -19,7 +19,7 @@ export default function storeCard(props) {
         </div>
         <div className="m-0 flex flex-col">
           <p>
-            <b>{props.district}</b> || <b>{props.type}</b>
+             <b>{props.district}</b> { (props.district && props.type) && '||'} <b>{props.type}</b>
           </p>
           <p>Click for more information</p>
         </div>

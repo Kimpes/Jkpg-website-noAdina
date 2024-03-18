@@ -62,10 +62,13 @@ export default function index(props) {
 
   return (
     <main>
+      <div className="herosection item-page my-16">
+        <div className="page-header">
+          <h1>WHAT DO YOU WANT TO DO TODAY?</h1>
+        </div>
+      </div>
       <div className="store-filter">
         <div className="store-filter-location">
-          <h5>Location</h5>
-
           <ul className="page-selection-buttons">
             {filters.map((location, index) => (
               <li>

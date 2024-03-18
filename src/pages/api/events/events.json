@@ -4,20 +4,20 @@
     "description": "come here and have a silly time with us",
     "location": "Högskolan",
     "type": "Celebration",
-    "date": null
+    "date": "2024-07-23"
   },
   {
     "title": "Not Silly event",
     "description": "come here and have an awful time with us",
     "location": "Väster",
     "type": "Mourning",
-    "date": null
+    "date": "2024-04-12"
   },
   {
     "title": "Mediocre Event",
     "description": "come here and have a time with us",
     "location": "Öster",
     "type": "Standing",
-    "date": null
+    "date": "2024-05-08"
   }
 ]
