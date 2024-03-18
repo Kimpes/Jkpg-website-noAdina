@@ -53,6 +53,7 @@ nav li {
 h1 {
   font-size: 6rem;
   font-weight: bold;
+  line-height: 1em;
 }
 
 h2 {
@@ -223,6 +224,7 @@ button.danger-button,
 input[type="submit"].danger-button {
   border-color: rgb(var(--danger-color));
   color: rgb(var(--danger-color));
+  margin-top: 20px;
 }
 
 .primary-button:hover {
@@ -427,7 +429,7 @@ input[type="submit"].danger-button {
 }
 
 .herosection.item-page::before {
-  bottom: 50rem;
+  bottom: 49rem;
 }
 
 .herosection .page-header {
@@ -437,6 +439,10 @@ input[type="submit"].danger-button {
   align-items: flex-end;
   height: 30vh;
   padding: 3vh 0;
+}
+
+.herosection .page-header.question {
+  height: 24vh;
 }
 
 .herosection .page-header span {

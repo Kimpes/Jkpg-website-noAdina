@@ -20,7 +20,7 @@ export default function index() {
   return (
     <main>
       <div className="herosection item-page my-16">
-        <div className="page-header">
+        <div className="page-header question">
           <h1>WHAT DO YOU WANT TO DO TODAY?</h1>
         </div>
       </div>
