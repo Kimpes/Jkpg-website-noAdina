@@ -2,7 +2,7 @@
   {
     "title": "Silly event",
     "description": "come here and have a silly time with us",
-    "location": "Öster",
+    "location": "Högskolan",
     "type": "Celebration",
     "date": null
   },
@@ -11,6 +11,13 @@
     "description": "come here and have an awful time with us",
     "location": "Väster",
     "type": "Mourning",
+    "date": null
+  },
+  {
+    "title": "Mediocre Event",
+    "description": "come here and have a time with us",
+    "location": "Öster",
+    "type": "Standing",
     "date": null
   }
 ]
