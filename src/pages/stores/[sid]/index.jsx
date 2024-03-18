@@ -55,7 +55,7 @@ export default function Page() {
         <li>
           <a>
             <img src={`/assets/${store[3]}.png`} alt="" />
-            <h4>{store[3].toUpperCase()}</h4>
+            <h4>{store[3]}</h4>
           </a>
         </li>
       </ul>

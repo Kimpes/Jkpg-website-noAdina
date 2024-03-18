@@ -134,20 +134,24 @@ export default function Home() {
             </li>
           </ul>
           <div className="store-filter">
-            <div className="store-filter-location">
+          <ul className="page-selection-buttons">
+            <li>
               <h5>Location</h5>
               {locations.map((location, index) => (
-                <button
+                <a
                   onClick={() => handleFilterOnClick(location)}
-                  className={`primary-button ${
+                  className={`location-button ${
                     selectedFilters.includes(location) ? "active" : ""
                   }`}
                   key={`filters-${index}`}
                 >
-                  {location}
-                </button>
+
+                  <img src={`/assets/${location}.png`} alt="" />
+                  <h4>{location.toUpperCase()}</h4>
+                </a>
               ))}
-            </div>
+            </li>
+          </ul>
           </div>
         </div>
         <div className="grid grid-flow-row grid-cols-3 gap-x-3 gap-y-3 place-content-center">

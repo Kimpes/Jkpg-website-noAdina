@@ -391,3 +391,17 @@ input[type="submit"].danger-button {
 .herosection h1 {
   color: rgb(var(--light-font));
 }
+
+
+/*------------------ Location Button -----------------------------------*/
+
+.location-button, 
+input[type="submit"].location-button {
+  border-color: rgb(var(--dark-font));
+}
+
+.store-filter {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
