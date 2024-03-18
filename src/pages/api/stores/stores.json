@@ -38,7 +38,8 @@
   {
     "name": "Ateljé Creativ i Jönköping/Finrummet",
     "url": "/finrummet.net",
-    "district": "Väster"
+    "district": "Väster",
+    "type": "Upplev"
   },
   {
     "name": "Ateljé KEG",
@@ -49,7 +50,8 @@
   {
     "name": "Atlantis Dive College",
     "url": "atlantis.se",
-    "district": "Väster"
+    "district": "Väster",
+    "type": "Upplev"
   },
   {
     "name": "Bagelle väskboutique",
@@ -61,22 +63,26 @@
   {
     "name": "Balance Ljud och Bild",
     "url": "balance.se",
-    "district": null
+    "district": null,
+    "type": "Shoppa"
   },
   {
     "name": "BGA Fotocenter",
     "url": "bgafotocenter.se/jonkoping/",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Shoppa"
   },
   {
     "name": "Bikupan",
     "url": "bikupan.org",
-    "district": "Tändsticksområdet"
+    "district": "Tändsticksområdet",
+    "type": "Shoppa"
   },
   {
     "name": "Blankdays",
     "url": "https://blankdays.com/collections/all-products?gclid=CjwKCAjwov6hBhBsEiwAvrvN6EZZ1PsnlSJhnE7bmxINtl0Y0noU3rvCybdt217CGd3-bqMdx3mYRxoCK5EQAvD_BwE",
-    "district": "Tändsticksområdet"
+    "district": "Tändsticksområdet",
+    "type": "Shoppa"
   },
   {
     "name": "Boardlife",
@@ -99,12 +105,14 @@
   {
     "name": "Broder Bläck",
     "url": "facebook.com/broderblacktatuering/",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Upplev"
   },
   {
     "name": "Buketten",
     "url": "instagram.com/bukettenjonkoping/?hl=sv",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Shoppa"
   },
   {
     "name": "Busfrö Nytt & Bytt",
@@ -127,7 +135,8 @@
   {
     "name": "Casa Souk",
     "url": "casasouk.se",
-    "district": "Väster"
+    "district": "Väster",
+    "type": "Shoppa"
   },
   {
     "name": "Cervera",
@@ -162,7 +171,8 @@
   {
     "name": "Day fotografi",
     "url": "dayfotografi.se/",
-    "district": null
+    "district": null,
+    "type": "Upplev"
   },
   {
     "name": "Dinos kemtvätt",
@@ -202,12 +212,14 @@
   {
     "name": "Euroex",
     "url": null,
-    "district": null
+    "district": null,
+    "type": "Other"
   },
   {
     "name": "Evoke industry",
     "url": null,
-    "district": null
+    "district": null,
+    "type": "Upplev"
   },
   {
     "name": "Fabriken",
@@ -224,7 +236,8 @@
   {
     "name": "Forex Bank Väster",
     "url": null,
-    "district": "Väster"
+    "district": "Väster",
+    "type": "Other"
   },
   {
     "name": "Foten",
@@ -235,12 +248,14 @@
   {
     "name": "Friendly Corner",
     "url": "https://friendlycorner.se/butiken",
-    "district": "Tändsticksområdet"
+    "district": "Tändsticksområdet",
+    "type": "Shoppa"
   },
   {
     "name": "Galleri 701 ramcenter",
     "url": "galleri701-ram.se",
-    "district": null
+    "district": null,
+    "type": "Shoppa"
   },
   {
     "name": "Gant",
@@ -275,12 +290,14 @@
   {
     "name": "Golden athlete",
     "url": "goldenathlete.se/sv/butiker-2",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Shoppa"
   },
   {
     "name": "Grmawit Store",
     "url": "grmawit.com/",
-    "district": "Väster"
+    "district": "Väster",
+    "type": "Shoppa"
   },
   {
     "name": "Guldsmedjan Snarberg",
@@ -369,12 +386,14 @@
   {
     "name": "Karin Lund Design",
     "url": "facebook.com/karinlunddesign/",
-    "district": null
+    "district": null,
+    "type": "Upplev"
   },
   {
     "name": "Katrin Bååths Ateljé",
     "url": "https://katrinbaath.se/ateljen/",
-    "district": "Tändsticksområdet"
+    "district": "Tändsticksområdet",
+    "type": "Upplev"
   },
   {
     "name": "Kicks",
@@ -397,7 +416,8 @@
   {
     "name": "KOiJ Konsthantverk",
     "url": "koij.se",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Upplev"
   },
   {
     "name": "Kristina Brud & Fest",
@@ -414,7 +434,8 @@
   {
     "name": "Kvänum Kök",
     "url": "kvanum.com/se/showrooms/jonkoping/",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Shoppa"
   },
   {
     "name": "Lagerhaus",
@@ -425,7 +446,8 @@
   {
     "name": "Lavér Studio",
     "url": "laverstudio.com/",
-    "district": null
+    "district": null,
+    "type": "Upplev"
   },
   {
     "name": "Life Naturlig Hälsa",
@@ -436,7 +458,8 @@
   {
     "name": "Lilla Violen",
     "url": "lillaviolen.com/",
-    "district": "Väster"
+    "district": "Väster",
+    "type": "Shoppa"
   },
   {
     "name": "Lindex",
@@ -447,12 +470,14 @@
   {
     "name": "Livspotential Kroppsterapi",
     "url": "facebook.com/Livspotential/",
-    "district": null
+    "district": null,
+    "type": "Health"
   },
   {
     "name": "Lloyd Tabing Art Gallery",
     "url": "lloydtabingart.com/",
-    "district": "Tändsticksområdet"
+    "district": "Tändsticksområdet",
+    "type": "Upplev"
   },
   {
     "name": "Macforum",
@@ -469,12 +494,14 @@
   {
     "name": "Mimosa City",
     "url": "mimosacity.se",
-    "district": null
+    "district": null,
+    "type": "Shoppa"
   },
   {
     "name": "Moderna Smycken",
     "url": "klockorochsmycken.se/",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Shoppa"
   },
   {
     "name": "Naturkompaniet",
@@ -485,7 +512,8 @@
   {
     "name": "Newhouse",
     "url": "newhouse.se/newhouse/vara-butiker",
-    "district": "Atollen"
+    "district": "Atollen",
+    "type": "Shoppa"
   },
   {
     "name": "New Yorker",
@@ -508,7 +536,8 @@
   {
     "name": "Nordisk Möbelkonst",
     "url": "nordiskmobelkonst.se/",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Shoppa"
   },
   {
     "name": "Normal",
@@ -603,7 +632,8 @@
   {
     "name": "Resehuset",
     "url": "resehuset.se/",
-    "district": "Väster"
+    "district": "Väster",
+    "type": "Upplev"
   },
   {
     "name": "Rituals",
@@ -638,17 +668,20 @@
   {
     "name": "SåIniNordeN",
     "url": "saininorden.se/",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Shoppa"
   },
   {
     "name": "Sandströms",
     "url": "sandstroms.nu/butiker/sandstroms-jonkoping",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Shoppa"
   },
   {
     "name": "Sarabello",
     "url": "facebook.com/people/SARABELLO/100054240470073/",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Shoppa"
   },
   {
     "name": "Saumas sko & nyckelservice",
@@ -665,7 +698,8 @@
   {
     "name": "Smålands Skinnmanufaktur",
     "url": "smalandsskinnmanufaktur.se/",
-    "district": "Tändsticksområdet"
+    "district": "Tändsticksområdet",
+    "type": "Upplev"
   },
   {
     "name": "Smarteyes",
@@ -694,7 +728,8 @@
   {
     "name": "Stagelight",
     "url": "stagelight.se/",
-    "district": null
+    "district": null,
+    "type": "Upplev"
   },
   {
     "name": "Stil",
@@ -711,7 +746,8 @@
   {
     "name": "SunOff",
     "url": "sunoff.se/butiker/jonkoping?gclid=CjwKCAjw8JKbBhBYEiwAs3sxNy3EnUFGceeFxyJN35fymdpsg5qEWUTPj6Sx0TbNoLdwp8E6AI-I5xoC45gQAvD_BwE",
-    "district": "Väster"
+    "district": "Väster",
+    "type": "Health"
   },
   {
     "name": "Synoptik",
@@ -746,7 +782,8 @@
   {
     "name": "Ticket",
     "url": "ticket.se/resebutiker/jonkoping.html",
-    "district": null
+    "district": null,
+    "type": "Upplev"
   },
   {
     "name": "Twilfit",
@@ -769,17 +806,20 @@
   {
     "name": "Västra klackbaren",
     "url": null,
-    "district": null
+    "district": null,
+    "type": "Shoppa"
   },
   {
     "name": "Vätterbygden Ankarbergs Begravningsbyrå",
     "url": "ankarbergs.se/",
-    "district": null
+    "district": null,
+    "type": "Other"
   },
   {
     "name": "Vätterfisk",
     "url": "xn--vtterfisk-v2a.se/",
-    "district": "Väster"
+    "district": "Väster",
+    "type": "Shoppa"
   },
   {
     "name": "Yxhage Lås och Larm",
@@ -790,6 +830,7 @@
   {
     "name": "Zephyr Tattoo Parlour",
     "url": "zephyrtattoo.se",
-    "district": "Öster"
+    "district": "Öster",
+    "type": "Upplev"
   }
 ]
