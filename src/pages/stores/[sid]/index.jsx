@@ -46,7 +46,7 @@ export default function Page() {
               className="primary-button"
               onClick={() => router.push(`/stores/${store[0]}/edit`)}
             >
-              edit.
+              edit
             </button>
           </span>
         </div>
@@ -58,6 +58,28 @@ export default function Page() {
             <h4>{store[3]}</h4>
           </a>
         </li>
+        <li>
+          <a href="">
+            <div className="image">
+              <img src={`/assets/${store[2]}.png`} alt="" />
+            </div>
+            <h4>{store[2]}</h4>
+          </a>
+        </li>
+        <li>
+          <a href={`${store[4]}`}>
+            <img src="/assets/Link.png" alt="" />
+            <h4>Website</h4>
+          </a>
+        </li>
+        {/* <div className="button-delete">
+          <li>
+            <a href="" onClick={() => deleteStore(store[0])}>
+              <img src="/assets/Link.png" alt="" />
+              <h4>Delete</h4>
+            </a>
+          </li>
+        </div> */}
       </ul>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce orci sem,
@@ -66,12 +88,7 @@ export default function Page() {
         id venenatis. Suspendisse eu leo elementum, tincidunt justo id, finibus
         nunc. Suspendisse potenti.
       </p>
-      <div className="item-page-link">
-        <img src="/assets/square-placeholder.svg" alt="" />
-        <a href={store[4]} className="item-page-link">
-          Link
-        </a>
-      </div>
+
       <div className="buttons-container">
         <button className="danger-button" onClick={() => deleteStore()}>
           Delete store

@@ -237,7 +237,7 @@ input[type="submit"].danger-button {
 }
 
 .page-selection-buttons {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 20px;
@@ -257,6 +257,12 @@ input[type="submit"].danger-button {
 .page-selection-buttons img {
   width: 40px;
   flex-shrink: 0;
+}
+
+.page-selecton-buttons.active {
+  background-color: rgb(var(--dark-font));
+  color: rgb(var(--light-font));
+  border-color: rgb(var(--dark-font));
 }
 
 /*-------------------------- Events ------------------------------*/
@@ -382,13 +388,10 @@ input[type="submit"].danger-button {
   color: rgb(var(--light-font));
 }
 
-
 /*------------------Location Buttons Image -----------------------------------*/
 
-
 .image img {
-border-color: rgb(var(--dark-font));
-border-width: 6px;
-width: 40px;
+  border-color: rgb(var(--dark-font));
+  border-width: 6px;
+  width: 40px;
 }
-
