@@ -118,6 +118,7 @@ export default function Home() {
               })}
           </div>
           <h3>Vad vill du göra?</h3>
+          <h5>Sort by type</h5>
           <ul className="page-selection-buttons">
             {types.map((type, index) => (
               <li>
@@ -146,23 +147,26 @@ export default function Home() {
               </div>
             </li>
           </ul>
+          <h5>Sort by location</h5>
           <div className="store-filter" id="store-grid">
             <ul className="page-selection-buttons">
-              <li>
-                <h5>Location</h5>
-                {locations.map((location, index) => (
+              {locations.map((location, index) => (
+                <li>
                   <a
                     onClick={() => handleFilterOnClick(location)}
-                    className={`location-button ${
+                    className={`primary-button ${
                       selectedFilters.includes(location) ? "active" : ""
                     }`}
                     key={`filters-${index}`}
                   >
-                    <img src={`/assets/${location}.png`} alt="" />
+                    <div className="image">
+                      <img src={`/assets/${location}.png`} alt="" />
+                    </div>
+
                     <h4>{location.toUpperCase()}</h4>
                   </a>
-                ))}
-              </li>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
