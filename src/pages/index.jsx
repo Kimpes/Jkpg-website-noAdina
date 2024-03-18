@@ -104,22 +104,17 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="main-content">
-        <div>
-          <h1>Welcome to Jönköping City</h1>
-        </div>
-
-        <a href="/long-page">Go to the long page</a>
+      <div className="main-content text-formatting">
         <div className="page-selection">
-          <h2>Verksamheter på Tändsticksområdet</h2>
+          <h3>WHAT'S HAPPENING IN TOWN?</h3>
           <div className="grid grid-flow-row grid-cols-3 gap-x-16 gap-y-6 place-content-center event-card-container">
             {!!events &&
               events.map((event) => {
                 return <EventCard name={event.title} id={event.id} />;
               })}
           </div>
-          <h3>Vad vill du göra?</h3>
-          <h5>Sort by type</h5>
+          <h3>WHERE DO YOU WANT TO GO?</h3>
+          <h4>Sort by type</h4>
           <ul className="page-selection-buttons">
             {types.map((type, index) => (
               <li>
@@ -148,7 +143,7 @@ export default function Home() {
               </div>
             </li>
           </ul>
-          <h5>Sort by location</h5>
+          <h4>Sort by location</h4>
           <div className="store-filter" id="store-grid">
             <ul className="page-selection-buttons">
               {locations.map((location, index) => (
