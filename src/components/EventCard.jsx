@@ -22,8 +22,8 @@ export default function storeCard(props) {
           <img src="/assets/dog.jpg" alt="a jack russtle terrier" />
         </div>
         <span className="event-date">
-          <h5>{date}</h5>
-          <p>{monthAbbrs[month-1]}</p>
+          <h5>{date ? date : '00'}</h5>
+          <p>{month ? monthAbbrs[month-1] : 'Month'}</p>
         </span>
       </div>
       <div className="event-card-information">
