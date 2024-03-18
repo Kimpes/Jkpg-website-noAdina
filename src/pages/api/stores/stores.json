@@ -14,25 +14,25 @@
   {
     "name": "Apoteket AB",
     "url": "apoteket.se/apotek/apoteket-ostra-storgatan-jonkoping/",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
     "name": "Apotek Hjärtat",
     "url": "apotekhjartat.se/hitta-apotek-hjartat/jonkoping/apotek_hjartat_smedjegatan_2_jonkoping/",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
     "name": "Ashur Brud & Fest - Skrädderi",
     "url": "facebook.com/AshuraitaBrudFest/",
-    "district": null,
+    "district": "Väster",
     "type": "Shoppa"
   },
   {
     "name": "Asia livs, servicebutik",
     "url": "facebook.com/profile.php?id=100051215441977",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
@@ -63,7 +63,7 @@
   {
     "name": "Balance Ljud och Bild",
     "url": "balance.se",
-    "district": null,
+    "district": "Stationen",
     "type": "Shoppa"
   },
   {
@@ -171,7 +171,7 @@
   {
     "name": "Day fotografi",
     "url": "dayfotografi.se/",
-    "district": null,
+    "district": "Öster",
     "type": "Upplev"
   },
   {
@@ -188,7 +188,7 @@
   {
     "name": "Direkt optik",
     "url": "https://www.direktoptik.se/butiker/jonkoping/ostra-storgatan-29/",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
@@ -200,25 +200,25 @@
   {
     "name": "Elias Urmästare",
     "url": "facebook.com/profile.php?id=100064073112753",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
     "name": "Engströms Urmakeri",
     "url": "engstromsurmakeri.se",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
     "name": "Euroex",
-    "url": null,
-    "district": null,
+    "url": "https://maps.app.goo.gl/7gCF1SjfPPV2chTZ6",
+    "district": "Resecentrum",
     "type": "Other"
   },
   {
     "name": "Evoke industry",
-    "url": null,
-    "district": null,
+    "url": "https://maps.app.goo.gl/SkxTcztDADfEBt3w9",
+    "district": "Väster",
     "type": "Upplev"
   },
   {
@@ -230,19 +230,19 @@
   {
     "name": "Fiction Prescription",
     "url": "https://www.instagram.com/fiction.prescription.jonkoping/",
-    "district": null,
+    "district": "",
     "type": "Shoppa"
   },
   {
     "name": "Forex Bank Väster",
-    "url": null,
+    "url": "https://www.facebook.com/fiction.prescription",
     "district": "Väster",
     "type": "Other"
   },
   {
     "name": "Foten",
     "url": "https://www.foten.se/",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
@@ -254,7 +254,7 @@
   {
     "name": "Galleri 701 ramcenter",
     "url": "galleri701-ram.se",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
@@ -362,19 +362,19 @@
   {
     "name": "JL Sycenter",
     "url": "jlsycenter.se/kontakta-oss/",
-    "district": null,
+    "district": "Väster",
     "type": "Shoppa"
   },
   {
     "name": "Jönköpings antik och konsthandel",
-    "url": null,
+    "url": "https://maps.app.goo.gl/zusZ2xYPJMheBCXR7",
     "district": "Väster",
     "type": "Shoppa"
   },
   {
     "name": "Jönköpings Cigrarrimport",
     "url": "atg.se/jonkopingscigarrimport",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
@@ -386,7 +386,7 @@
   {
     "name": "Karin Lund Design",
     "url": "facebook.com/karinlunddesign/",
-    "district": null,
+    "district": "Tändsticksområdet",
     "type": "Upplev"
   },
   {
@@ -446,7 +446,7 @@
   {
     "name": "Lavér Studio",
     "url": "laverstudio.com/",
-    "district": null,
+    "district": "Tändsticksområdet",
     "type": "Upplev"
   },
   {
@@ -494,7 +494,7 @@
   {
     "name": "Mimosa City",
     "url": "mimosacity.se",
-    "district": null,
+    "district": "Väster",
     "type": "Shoppa"
   },
   {
@@ -578,7 +578,7 @@
   {
     "name": "Optik & Form",
     "url": "optikochform.se/",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
@@ -662,7 +662,7 @@
   {
     "name": "Säfvers Tobak",
     "url": "facebook.com/people/S%C3%A4fvers-tobak/100049803762896/",
-    "district": null,
+    "district": "Resecentrum",
     "type": "Shoppa"
   },
   {
@@ -686,7 +686,7 @@
   {
     "name": "Saumas sko & nyckelservice",
     "url": "saumasskoochnyckelservice.heymo.se/",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
@@ -704,31 +704,31 @@
   {
     "name": "Smarteyes",
     "url": "smarteyes.se/butiker/jonkoping",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
     "name": "Smycka Guld",
     "url": "smycka.se/store/19",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
     "name": "Smycket",
     "url": "smycketjonkoping.se/",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
     "name": "Specsavers",
     "url": "httpspecsavers.se/hitta-till-din-butik/jonkoping-city?utm_source=google&utm_medium=organic&utm_campaign=gmb-website&utm_content=jonkoping&y_source=1_NDA4Nzk2NjQtNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
     "name": "Stagelight",
     "url": "stagelight.se/",
-    "district": null,
+    "district": "Other",
     "type": "Upplev"
   },
   {
@@ -752,7 +752,7 @@
   {
     "name": "Synoptik",
     "url": "httpsynoptik.se/butiker/jonkoping/jonkoping-ostra-storgatan5?utm_campaign=gmb-website&utm_source=google&utm_medium=organic&utm_content=667-Jonkoping-Ostra-Storgatan-5",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
@@ -782,7 +782,7 @@
   {
     "name": "Ticket",
     "url": "ticket.se/resebutiker/jonkoping.html",
-    "district": null,
+    "district": "Resecentrum",
     "type": "Upplev"
   },
   {
@@ -805,14 +805,14 @@
   },
   {
     "name": "Västra klackbaren",
-    "url": null,
-    "district": null,
+    "url": "google.se",
+    "district": "Väster",
     "type": "Shoppa"
   },
   {
     "name": "Vätterbygden Ankarbergs Begravningsbyrå",
     "url": "ankarbergs.se/",
-    "district": null,
+    "district": "Väster",
     "type": "Other"
   },
   {
@@ -824,7 +824,7 @@
   {
     "name": "Yxhage Lås och Larm",
     "url": "yxhage.se/",
-    "district": null,
+    "district": "Öster",
     "type": "Shoppa"
   },
   {
