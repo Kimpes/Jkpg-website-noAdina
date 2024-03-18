@@ -84,16 +84,19 @@ export default function index(props) {
                 </a>
               </li>
             ))}
+            <li>
+              <div className="searchbar">
+                <img src="/assets/hitta.png" alt="" />
+                <input
+                  type="text"
+                  id="search"
+                  name="search"
+                  placeholder="Search"
+                  onChange={(e) => setSearch(e.target.value)}
+                />
+              </div>
+            </li>
           </ul>
-        </div>
-        <div className="searchbar">
-          <input
-            type="text"
-            id="search"
-            name="search"
-            placeholder="Search"
-            onChange={(e) => setSearch(e.target.value)}
-          />
         </div>
       </div>
       <div className="grid grid-flow-row grid-cols-3 gap-x-10 gap-y-2 place-content-center">
