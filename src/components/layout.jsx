@@ -19,7 +19,7 @@ export default function Layout({ children }) {
     <>
       {/* this is metadata stuff */}
       <Head>
-        <title>hello im title</title>
+        <title>JKPG City</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
