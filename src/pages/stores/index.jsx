@@ -65,17 +65,26 @@ export default function index(props) {
       <div className="store-filter">
         <div className="store-filter-location">
           <h5>Location</h5>
-          {filters.map((location, index) => (
-            <button
-              onClick={() => handleFilterOnClick(location)}
-              className={`primary-button ${
-                selectedFilters.includes(location) ? "active" : ""
-              }`}
-              key={`filters-${index}`}
-            >
-              {location}
-            </button>
-          ))}
+
+          <ul className="page-selection-buttons">
+            {filters.map((location, index) => (
+              <li>
+                <a
+                  onClick={() => handleFilterOnClick(location)}
+                  className={`primary-button ${
+                    selectedFilters.includes(location) ? "active" : ""
+                  }`}
+                  key={`filters-${index}`}
+                >
+                  <div className="image">
+                    <img src={`/assets/${location}.png`} alt="" />
+                  </div>
+
+                  <h4>{location.toUpperCase()}</h4>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
         <div className="searchbar">
           <input

@@ -473,3 +473,13 @@ input[type="submit"].danger-button {
 .card:hover {
   transform: scale(1.05);
 }
+
+/*--------------------- Text formatting ---------------------------*/
+.text-formatting h3 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.text-formatting h4 {
+  padding-bottom: 20px;
+}
