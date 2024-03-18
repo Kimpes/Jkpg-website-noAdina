@@ -237,7 +237,8 @@ input[type="submit"].danger-button {
 }
 
 .page-selection-buttons {
-  display: flex;
+  display: flex; 
+  flex-wrap: wrap;
   gap: 15px;
   margin-bottom: 20px;
 }
@@ -306,17 +307,6 @@ input[type="submit"].danger-button {
 .event-card-container .event-date > h5 {
   line-height: 0.9em;
   font-weight: 700;
-}
-
-/*-------------------------- Stores ------------------------------*/
-
-.store-filter {
-  padding: 20px;
-  background-color: antiquewhite;
-}
-
-.store-filter-location label {
-  padding-left: 5px;
 }
 
 /*----------------------- Search Bar --------------------------------------------*/
@@ -393,15 +383,12 @@ input[type="submit"].danger-button {
 }
 
 
-/*------------------ Location Button -----------------------------------*/
+/*------------------Location Buttons Image -----------------------------------*/
 
-.location-button, 
-input[type="submit"].location-button {
-  border-color: rgb(var(--dark-font));
+
+.image img {
+border-color: rgb(var(--dark-font));
+border-width: 6px;
+width: 40px;
 }
 
-.store-filter {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-}
