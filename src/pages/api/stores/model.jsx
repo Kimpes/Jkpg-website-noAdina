@@ -33,28 +33,28 @@ class Model {
     //       OWNER to postgres
     // `);
 
-    for (const store of stores) {
-      const { rows } = await this.client.query(
-        `
-        SELECT * FROM stores WHERE name = $1
-      `,
-        [store.name]
-      );
+    // for (const store of stores) {
+    //   const { rows } = await this.client.query(
+    //     `
+    //     SELECT * FROM stores WHERE name = $1
+    //   `,
+    //     [store.name]
+    //   );
 
-      if (rows.length == 0) {
-        if (!store.type) {
-          store.type = null;
-        }
-        console.log(`Inserting ${store.name}`);
-        await this.client.query(
-          `
-          INSERT INTO public.stores (name, url, district, type)
-          VALUES ($1, $2, $3, $4)
-        `,
-          [store.name, store.url, store.district, store.type]
-        );
-      }
-    }
+    //   if (rows.length == 0) {
+    //     if (!store.type) {
+    //       store.type = null;
+    //     }
+    //     console.log(`Inserting ${store.name}`);
+    //     await this.client.query(
+    //       `
+    //       INSERT INTO public.stores (name, url, district, type)
+    //       VALUES ($1, $2, $3, $4)
+    //     `,
+    //       [store.name, store.url, store.district, store.type]
+    //     );
+    //   }
+    // }
   }
 
   async getStoreById(id) {

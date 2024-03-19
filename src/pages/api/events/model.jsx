@@ -34,28 +34,28 @@ class Model {
     //       OWNER to postgres
     // `);
 
-    for (const event of events) {
-      const { rows } = await this.client.query(
-        `
-        SELECT * FROM events WHERE title = $1
-      `,
-        [event.title]
-      );
+    // for (const event of events) {
+    //   const { rows } = await this.client.query(
+    //     `
+    //     SELECT * FROM events WHERE title = $1
+    //   `,
+    //     [event.title]
+    //   );
 
-      if (rows.length == 0) {
-        if (!event.date) {
-          event.date = null;
-        }
-        console.log(`Inserting ${event.title}`);
-        await this.client.query(
-          `
-          INSERT INTO public.events (title, description, location, type, date)
-          VALUES ($1, $2, $3, $4, $5)
-        `,
-          [event.title, event.description, event.location, event.type, event.date]
-        );
-      }
-    }
+    //   if (rows.length == 0) {
+    //     if (!event.date) {
+    //       event.date = null;
+    //     }
+    //     console.log(`Inserting ${event.title}`);
+    //     await this.client.query(
+    //       `
+    //       INSERT INTO public.events (title, description, location, type, date)
+    //       VALUES ($1, $2, $3, $4, $5)
+    //     `,
+    //       [event.title, event.description, event.location, event.type, event.date]
+    //     );
+    //   }
+    // }
   }
 
   async getEventById(id) {
@@ -85,7 +85,14 @@ class Model {
       SET title = $1, description = $2, location = $3, type = $4, date = $5
       WHERE id = $6
       `,
-      [event.title, event.description, event.location, event.type, event.date, event.id]
+      [
+        event.title,
+        event.description,
+        event.location,
+        event.type,
+        event.date,
+        event.id,
+      ]
     );
     return;
   }

@@ -80,7 +80,7 @@ export default function index(props) {
                   key={`filters-${index}`}
                 >
                   <div className="image">
-                    <img src={`/assets/${location}.png`} alt="" />
+                    <img src={`/assets/${location}.png`.toLowerCase()} alt="" />
                   </div>
 
                   <h4>{location.toUpperCase()}</h4>

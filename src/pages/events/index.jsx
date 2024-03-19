@@ -27,7 +27,9 @@ export default function index() {
       <div className="grid grid-flow-row grid-cols-3 gap-x-16 gap-y-6 place-content-center event-card-container">
         {!!events &&
           events.map((event) => {
-            return <EventCard name={event.title} id={event.id} />;
+            return (
+              <EventCard name={event.title} id={event.id} date={event.date} />
+            );
           })}
       </div>
     </main>

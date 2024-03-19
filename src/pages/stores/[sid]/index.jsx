@@ -54,14 +54,14 @@ export default function Page() {
       <ul className="page-selection-buttons">
         <li>
           <a>
-            <img src={`/assets/${store[3]}.png`} alt="" />
+            <img src={`/assets/${store[3]}.png`.toLowerCase()} alt="" />
             <h4>{store[3]}</h4>
           </a>
         </li>
         <li>
-          <a href="">
+          <a>
             <div className="image">
-              <img src={`/assets/${store[2]}.png`} alt="" />
+              <img src={`/assets/${store[2]}.png`.toLowerCase()} alt="" />
             </div>
             <h4>{store[2]}</h4>
           </a>

@@ -63,7 +63,7 @@ export default function Page() {
           <li>
             <a>
               <div className="image">
-                <img src={`/assets/${event[3]}.png`} alt="" />
+                <img src={`/assets/${event[3]}.png`.toLowerCase()} alt="" />
               </div>
               <h4>{event[3]}</h4>
             </a>

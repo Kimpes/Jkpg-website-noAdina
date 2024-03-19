@@ -98,7 +98,7 @@ export default function Home() {
               key={`map-filters-${index}`}
               href="#store-grid"
             >
-              <img src={`/assets/${location}.png`} alt="" />
+              <img src={`/assets/${location}.png`.toLowerCase()} alt="" />
               <div>{location}</div>
             </a>
           ))}
@@ -110,10 +110,16 @@ export default function Home() {
           <div className="grid grid-flow-row grid-cols-3 gap-x-16 gap-y-6 place-content-center event-card-container">
             {!!events &&
               events.map((event) => {
-                return <EventCard name={event.title} id={event.id} date={event.date} />;
+                return (
+                  <EventCard
+                    name={event.title}
+                    id={event.id}
+                    date={event.date}
+                  />
+                );
               })}
           </div>
-          <h3>WHERE DO YOU WANT TO GO?</h3>
+          <h3 id="store-grid">WHERE DO YOU WANT TO GO?</h3>
           <h4>Sort by type</h4>
           <ul className="page-selection-buttons">
             {types.map((type, index) => (
@@ -144,7 +150,7 @@ export default function Home() {
             </li>
           </ul>
           <h4>Sort by location</h4>
-          <div className="store-filter" id="store-grid">
+          <div className="store-filter">
             <ul className="page-selection-buttons">
               {locations.map((location, index) => (
                 <li>
@@ -156,7 +162,10 @@ export default function Home() {
                     key={`filters-${index}`}
                   >
                     <div className="image">
-                      <img src={`/assets/${location}.png`} alt="" />
+                      <img
+                        src={`/assets/${location}.png`.toLowerCase()}
+                        alt=""
+                      />
                     </div>
 
                     <h4>{location.toUpperCase()}</h4>
